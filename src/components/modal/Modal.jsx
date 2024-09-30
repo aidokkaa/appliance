@@ -1,0 +1,78 @@
+import React from 'react'
+import './modal.css'
+import { FaPhoneAlt } from "react-icons/fa";
+import logo from '../../image/logo appl.jpg'
+import Comp1 from '../Comp1';
+import Comp2 from '../Comp2';
+import Comp3 from '../Comp3';
+const components = [
+  <Comp1/>,
+  <Comp2/>,
+  <Comp3/>
+]
+const Modal = ({open,setOpen}) => {
+  const [selectedDate,setDate]=React.useState(null)
+  const [step,setStep] = React.useState(0)
+  const [selectBrand,setSelectBrand] = React.useState('')
+  console.log(selectBrand)
+  const [selectTime,setSelTime]=React.useState('')
+  console.log(selectTime)
+  const selComp = components[step]
+  const [width,setWidth] = React.useState(0);
+  const [category,setCategory]=React.useState(0);
+  return (
+    <div>
+        <div className="overlay" onClick={()=>setOpen(false)}>
+           <div  className={open ?  "modal act2" : "modal"} onClick={e=>e.stopPropagation()}>
+            <div onClick ={()=>setOpen(false)} className="close">
+              <h2>x</h2>
+            </div>
+            <div className="width">
+            <div className="top">
+              <div className="logoModal">
+                <img className='logoModal' src={logo} alt="" />
+              </div>
+              <div className="call">
+                <p>In case of emergency, call us by phone:</p>
+                <b><p className='num'> <FaPhoneAlt /> 77899878998</p></b>
+              </div>
+            </div>
+       <div className="center">
+       <div className="progress" >
+         <div className="circle" style={{width:`${width}%`}}></div>
+       </div>
+       <div className="info">
+        <div className="span">
+        <span>Service
+        Information</span>
+        </div>
+       <div className="span">
+       <span>Schedule
+          Day/Time</span>
+       </div>
+        <div className="span">
+        <span>Contact
+        Information</span>
+        </div>
+       </div>
+       </div>
+        {
+        width===0 &&
+        (<Comp1 category = {category} setCategory={setCategory} selectBrand = {selectBrand} setSelectBrand={setSelectBrand} width = {width} setWidth = {setWidth}/>)
+        }
+        {
+          width===50 &&
+          (<Comp2 selectedDate={selectedDate} setDate={setDate}  selectTime = {selectTime} setSelTime = {setSelTime} width = {width} setWidth = {setWidth}/>)
+        }
+          {
+          width===100 &&
+          (<Comp3 category = {category} selectedDate={selectedDate} setDate={setDate}  selectTime = {selectTime} setSelTime = {setSelTime} width = {width} setWidth = {setWidth} selectBrand = {selectBrand}/>)
+        }
+            </div>
+           </div>
+        </div>       
+    </div>
+  )
+}
+
+export default Modal

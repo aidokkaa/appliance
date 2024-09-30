@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    padding: 10px 0;
+    height: 80vh;
+    background:  
+         url("https://res.cloudinary.com/liaison-inc/image/upload/c_fill,f_auto,q_auto/services/homeguide/backgrounds/appliance-repair.jpg") center;
+         background-size: cover;
+         object-fit: cover;
+         background-repeat: no-repeat;
+         .link{
+            text-decoration: none;
+            color: white;
+         }
+}
+.mainLeft{
+    background-color: white;
+    background: linear-gradient(
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.8));
+    width: 60%;
+    padding: 27px 0;
+    margin-top: 120px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin-top: 30px;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    padding: 7px;
+    background-color: #20B2AA;
+    border-radius: 10px;
+}
+.marg{
+    margin-top: 23px;
+    h3{
+        margin-top: 20px;
+    }
+}
+.flex2H3{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.spanH{
+    font-size: 17px;
+}
+.flex1 img{
+    width: 180px;
+    height: 130px;
+}
+.burgerDiv,.burgerMenu{
+  display: none;
+}
+@media (max-width: 740px){
+    .mainLeft h1{
+      font-size: 25px;
+    }
+}
+@media (max-width: 484px){
+    .mainLeft h1{
+      font-size: 25px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainLeft{
+        margin-top: 30px;
+        width: 70%;
+        padding: 20px;
+    }
+    .marg p{
+        font-size: 15px;
+    }
+    .btn{
+        width: 110px;
+        padding: 9px;
+        height: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn p{
+      font-size: 14px;
+    }
+    .header{
+        .flex2 {
+            display: none;
+        }
+    }
+    .flex3 span,hr{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .h3A{
+        display: none;
+    }
+    .burgerDiv{
+      margin-top: 45px;
+      width: 38px;
+      border-radius: 5px;
+      padding: 5px;
+      height: 23px;
+      background-color: #20B2AA;
+      cursor: pointer;
+      display: block;
+    }
+    .burgerDiv img{
+      width: 27px;
+      height: 23px;
+      color: white;
+    }
+    .burgerMenu{
+       width: 65%;
+       position: fixed;
+       top: 0;
+       right: 0;
+       background-color: #20B2AA;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .burgerMenu a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .burgerMenu span{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .closeMenu{
+        position: absolute;
+        top: 7px;
+        left: 13px;
+        font-size: 20px;
+        font-weight: 500;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    .flex1 img{
+       width: 150px;
+       height: 120px;
+    }
+
+}

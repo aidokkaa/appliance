@@ -1,0 +1,71 @@
+.helpCont{
+height: 80vh;
+width: 85%;
+margin: 0px auto;
+display: flex;
+justify-content: space-between;
+}
+.child{
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 185px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 25px 30px;
+    background-color: #40E0D0;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+.child:hover{
+    background-color: #20B2AA;
+    transition: .3s;
+}
+.iconC{
+    width: 60px;
+    height: 70px;
+}
+@media (max-width: 740px) {
+    .helpCont{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+    }
+    .child{
+        width: 150px;
+        height: 180px;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 484px) {
+    .canH{
+        font-size: 25px;
+    }
+    .canHelp{
+        height: 100vh;
+    }
+    .helpCont{
+        min-height: 100vh;
+        /* background-color: green; */
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .child{
+        width: 75%;
+        height: 140px;
+        margin-top: 30px;
+        h3{
+            font-size: 16px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}

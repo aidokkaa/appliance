@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+.overlay{
+    width: 100vw;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.modal{
+    padding: 10px 0;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    max-height: 85vh;
+    width: 50%; 
+    overflow-y: scroll;
+    box-shadow: 4px 5px 5px 10px gray;
+    position: relative;
+}
+.close{
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: #20B2AA;
+  cursor: pointer;
+}
+.width{
+    margin: 0 auto;
+    width: 85%;
+}
+.modal::-webkit-scrollbar {
+    display: none;
+  }
+.act2{
+    transform: scale(1); 
+    transition: 3s;
+}
+.top{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.logoModal{
+    width: 120px;
+    height: 100px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.pReq{
+    font-size: 11.5px;
+    color: gray;
+    margin-top: 10px;
+}
+.info{
+    display: flex;
+   color: gray;
+   margin: 15px;
+    font-size: 12px;
+    gap: 80px;
+}
+.call {
+    width: 250px;
+    margin-top: 30px;
+    p{
+        font-family: 'Poppins',sans-serif;
+        font-size: 11px;
+    }
+    .num{
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+}
+.progress{
+    width: 320px;
+    height: 18px;
+    border-radius: 25px;
+    background-color: #efefef ;
+}
+.circle{
+    /* width: 20px; */
+    height: 100%;
+    transition: 1s;
+   border-radius: 25px ;
+    background-color: #20B2AA;
+}
+.info11 span{
+    color: gray;
+    font-size: 12px;
+}
+.span{
+    width: 70px;
+}
+.help{
+    margin: 27px 0;
+}
+.techItems{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 30px auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.item{
+    border: 1px solid #40E0D0;
+    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.activeIndex{
+    background-color: #40E0D0;
+}
+.svg{
+    font-size: 35px;
+
+}
+.itemName{
+    font-size: 14px;
+    color: #3a3b3c;
+}
+.item:hover {
+    background-color: #40E0D0;
+    color: white;
+  }
+  .servInfoForm{
+    /* width: 80%; */
+    margin: 30px auto;
+    form{
+        margin-top: 30px;
+        select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        p{
+            margin-top: 30px;
+        }
+        textarea{
+            margin-top: 30px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            height: 70px; 
+        }
+        button{
+            padding: 7px;
+            width: 90px;
+            margin-top: 20px;
+            cursor:pointer;
+        }
+    }
+  }
+  .title{
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+  }
+  .title h2{
+     margin-bottom: 15px;
+  }
+  .logo{
+    width: 120px;
+    height: 100px;
+  }
+
+  .select{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+  select{
+    width: 250px;
+    padding: 8px;
+    border-radius: 10px;
+    color: gray;
+  }
+  }
+  .picker{
+    width:250px;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 30px auto;
+  }
+  .btns1{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 30px auto;
+  }
+  .errText{
+    color: red;
+    font-size: 14px;
+  }
+  .btnNext{
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #20B2AA;
+  }
+  .btnPrev{
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #20B2AA;
+  }
+  .btnSubmit{
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #20B2AA;
+  }
+  .formSend{
+    h2{
+        margin: 20px;
+    }
+    width: 600px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    input{
+        padding: 9px;
+        width: 170px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: solid 1px #3a3b3c
+    }
+  }
+  .infos{
+     display: flex;
+     justify-content: space-between;
+  }
+  .alert{
+   width: 400px;
+   box-shadow: 4px 5px 5px 10px #A9A9A9;
+   padding: 10px;
+   margin: 40px auto;
+   p{
+    font-size: 14px;
+   }
+  }
+  @media (max-width: 484px){
+    .modal{
+        width: 85%;
+    }
+    .progress{
+        width: 270px;
+        height: 16px
+    }
+    .logoModal{
+        width: 120px;
+        height: 90px;
+    }
+    .info{
+        display: flex;
+        font-size: 11px;
+        gap: 50px;
+    }
+    .top{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        gap: 60px;
+    }
+    .call {
+        width: 250px;
+        margin-top: 20px;
+        p{
+            font-family: 'Poppins',sans-serif;
+            font-size: 11px;
+        }
+        .num{
+            font-size: 14px;
+            margin-top: 10px;
+    
+        }
+    }
+    .help{
+        font-size: 25px;
+    }
+    .selectP{
+        font-size: 16px;
+    }
+    .item{
+        width: 80px;
+        height: 80px;
+    }
+    .svg{
+        font-size: 30px;
+    }
+    .itemName{
+        font-size: 14px;
+        color: #3a3b3c;
+    }
+    .servInfoForm p{
+      font-size: 15px;
+    }
+    .errText{
+        font-size: 14px;
+    }
+    .title{
+        width: 80%;
+    }
+    .title h2{
+        font-size: 25px;
+    }
+    .titleP{
+        font-size: 14px;
+    }
+    .select{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 30px auto;
+      select{
+        width: 250px;
+        padding: 8px;
+        border-radius: 10px;
+        color: gray;
+      }
+      }
+      .picker{
+        width:236px;
+        padding: 7px;
+        border-radius: 10px;
+        outline: none;
+      }
+      .formSend{
+        width: 80%;
+      }
+     .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+     }
+     .btns{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+      }
+  }
+  
