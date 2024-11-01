@@ -64,6 +64,12 @@ const Mainpg = () => {
               }
       </div>
         </div>
+        <div  onClick={()=>setOpen(true)} className="book">
+          Book service
+        </div>
+        {open &&
+               <Modal open = {open} setOpen= {setOpen}/>
+              }
         <div onClick={()=>setClose(true)} className="burgerDiv">
            <img src={burger} alt="" className='burger'/>
         </div>
@@ -73,7 +79,7 @@ const Mainpg = () => {
   {close && 
     <div className="burgerMenu">
     <div onClick={()=>setClose(false)}  className="closeMenu">X</div>
-    <a href="tel:+15712750418">Call us</a>
+    <a href="tel:+17736783568">Call us</a>
     <a onClick={()=>{
         aboutRef.current?.scrollIntoView({
           behavior:'smooth'
@@ -84,11 +90,10 @@ const Mainpg = () => {
           behavior:'smooth'
         })
       }} href="#faq"><span>FAQ</span></a>
-      <a onClick={()=>{
-        galRef.current?.scrollIntoView({
-          behavior:'smooth'
-        })
-      }} href="#gal"><span>Gallery</span></a>
+      <a onClick={()=>setOpen(true)} href="#"><span>Schedule your service!</span></a>
+      {open &&
+               <Modal open = {open} setOpen= {setOpen}/>
+              }
       <a onClick={()=>{
         rewRef.current?.scrollIntoView({
           behavior:'smooth'
@@ -98,7 +103,7 @@ const Mainpg = () => {
             <div className="main-section">
       <div className="bg-main">
       <video className="background-video" autoPlay muted loop>
-        <source  src={video} media="(min-width: 500px)" type="video/mp4" />
+        <source src={video} media="(min-width: 500px)" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="content">
@@ -108,6 +113,7 @@ const Mainpg = () => {
       </div>
     </div>
     <CanHelp/>
+    <Brands></Brands>
         <About aboutRef = {aboutRef}/>
         <Faq faqRef = {faqRef}/>
         <Advantages/>

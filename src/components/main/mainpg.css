@@ -63,6 +63,9 @@
   margin: 30px auto;
   z-index: -1;
   }
+  .book{
+    display: none;
+  }
 
 .mainLeft{
     background-color: white;
@@ -204,6 +207,18 @@
       background-color: rgb(0, 99, 255);
       cursor: pointer;
       display: block;
+    }
+    .book{
+        margin-top: 45px;
+        width: 105px;
+        margin-right: 11px;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        height: 23px;
+        background-color: rgb(0, 99, 255);
+        cursor: pointer;
+        display: block;
     }
     .burgerDiv img{
       width: 27px;
