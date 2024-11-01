@@ -117,7 +117,6 @@ const Mainpg = () => {
         <About aboutRef = {aboutRef}/>
         <Faq faqRef = {faqRef}/>
         <Advantages/>
-        <Brands></Brands>
         <div style={{padding:"60px"}} className="reviews">
         <Reviews rewRef = {rewRef}></Reviews>
         </div>

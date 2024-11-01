@@ -3,19 +3,18 @@
   white-space: nowrap;
   width: 100%;
   position: relative;
+  margin: 90px 0;
   display: flex;
 }
 .marquee {
   display: flex;
   gap: 80px;
-  /* padding: 80px 0; */
+
   animation: marqueeScroll 20s linear infinite;
 }
-
 .marquee-item {
   height: 70px;
 }
-
 @keyframes marqueeScroll {
   0% {
     transform: translateX(0);
@@ -25,10 +24,11 @@
   }
 }
 
-@media (max-width: 484px) {
+@media (max-width: 500px) {
   .marquee {
     gap: 50px;
-    margin: 120px 0 50px;
+    margin-top: 200px;
+    padding: 10px 0;
     animation: marqueeScroll 15s linear infinite;
   }
   .marquee-container {
