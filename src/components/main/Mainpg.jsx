@@ -11,7 +11,7 @@ import Gallery from '../gallery/Gallery'
 import Brands from '../brands/Brands'
 import Advantages from '../advantages/Advantages'
 import logo from '../../image/logolast.jpg'
-import video from '../../image/videomob.mp4'
+import video from '../../image/electric.mov'
 import burger from '../../image/burger.png'
 const Mainpg = () => {
   const aboutRef = React.useRef(null)
@@ -102,7 +102,7 @@ const Mainpg = () => {
     </div>}
             <div className="main-section">
       <div className="bg-main">
-      <video className="background-video" autoPlay muted loop>
+      <video className="background-video"  autoPlay muted loop playsInline>
         <source src={video} media="(min-width: 500px)" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

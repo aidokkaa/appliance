@@ -12,14 +12,13 @@ const Footer = () => {
           <h3 className='footerH'>Company</h3>
           <p>About Company</p>
           <p>Services</p>
-          <p>Gallery</p>
           <p>Contacts</p>
         </div>
         <div className="contacts">
           <h3 className='footerH'>Contacts</h3>
-          <p>1234, Chicago, N Albany Ave</p>
+          <p>4617 North Lawndale Ave</p>
           <p>Phone:+1 773 678 35 68</p>
-          <p>Email:appliance@gmail.com</p>
+          <p>Email:smartappliance01@gmail.com</p>
         </div>
         <div className="social">
           <span className='iconF'><FaWhatsappSquare/></span>

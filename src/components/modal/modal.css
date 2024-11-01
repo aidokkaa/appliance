@@ -303,8 +303,8 @@
         height: 16px
     }
     .logoModal{
-        width: 120px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
     .info{
         display: flex;
@@ -323,7 +323,6 @@
         .num{
             font-size: 14px;
             margin-top: 10px;
-    
         }
     }
     .help{
