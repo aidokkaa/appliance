@@ -54,7 +54,6 @@ const Mainpg = () => {
             behavior:'smooth'
           })
         }} href="#review"><span className='spanH'>Reviews</span></a>
-        <span className='spanH'>Reviews</span>
         <div onClick={()=>setOpen(true)} className="btnn">
               <p style={{fontSize:"14px"}} className='bookS'>
               Schedule your service!</p>
