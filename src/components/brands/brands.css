@@ -28,8 +28,7 @@
 @media (max-width: 484px) {
   .marquee {
     gap: 50px;
-    /* padding: 40px 0; */
-    margin-top: 150px;
+    margin: 120px 0 50px;
     animation: marqueeScroll 15s linear infinite;
   }
   .marquee-container {
@@ -38,7 +37,7 @@
     width: 100%;
     position: relative;
     display: flex;
-    margin-top: 100px;
+    
   }
   .marquee-item {
     height: 60px;
