@@ -98,7 +98,7 @@ const Mainpg = () => {
             <div className="main-section">
       <div className="bg-main">
       <video className="background-video" autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source  src={video} media="(min-width: 500px)" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="content">
@@ -116,7 +116,6 @@ const Mainpg = () => {
         <Reviews rewRef = {rewRef}></Reviews>
         </div>
         <Gallery galRef={galRef}/>
-        
         <Maps></Maps>
         <Footer></Footer>
     </div>
