@@ -113,6 +113,7 @@ const Mainpg = () => {
       </div>
     </div>
     <CanHelp/>
+    <Brands></Brands>
         <About aboutRef = {aboutRef}/>
         <Faq faqRef = {faqRef}/>
         <Advantages/>
