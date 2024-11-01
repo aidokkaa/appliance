@@ -91,7 +91,15 @@ const Comp1 = ({width,setWidth,selectBrand,setSelectBrand,category,setCategory})
             <option value="Jenn Air">Jenn Air</option>
             <option value="ElectroLux">ElectroLux</option>
             <option value="Dakor">Dakor</option>
-            <option value="Bosh">Bosh</option>
+            <option value="Viking Professional">Viking Professional</option>
+            <option value="Wolf">Wolf</option>
+            <option value="Miele">Miele</option>
+            <option value="Frigidaire">Frigidaire</option>
+            <option value="Whirlpool">Whirlpool</option>
+            <option value="Haier">Haier</option>
+            <option value="Rational">Rational</option>
+            <option value="Maytag">Maytag</option>
+            <option value="Samsung">Samsung</option>
             <option value="KitchenAid">KitchenAid</option>
            </select>
            <p className='errText'> {errText}</p>

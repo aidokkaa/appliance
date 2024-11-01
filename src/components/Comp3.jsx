@@ -46,7 +46,6 @@ const techItems = [
   }
 ];
 const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,selectedDate,setDate}) => {
-  const [alert,setAlert]=React.useState(false);
   const form = useRef();
  const [user,setUser]=React.useState({
   firstName:'',
@@ -64,10 +63,6 @@ const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,select
  const handleChange = (e)=>{
   setUser(prev=>({...prev,[e.target.name]:e.target.value}))
  }
- const clickAlert=()=>{
-  if(user.firstName){
-    setAlert(true)
-  }}
  const sendEmail = (e) => {
   e.preventDefault();
   emailjs
@@ -108,17 +103,10 @@ const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,select
         <input required onChange={handleChange} placeholder='Zip Code' name = "zipCode" type="number" />
         </div>
      </div>
-     {
-      alert &&
-      <div className="alert">
-      <p>
-        Thank you! We will contact you within 
-        15 minutes</p>
-    </div>
-     }
+  
         <div className="btns">
            <button className='btnPrev' onClick={()=>setWidth(width-50)}>Prev</button>
-           <button onClick={clickAlert} className='btnSubmit' type='submit'>Submit</button>
+           <button onClick={()=>alert('Thank you! We will contact with you within 15 minutes!')} className='btnSubmit' type='submit'>Submit</button>
            </div>
      </form>
     </div>

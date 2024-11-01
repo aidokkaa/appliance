@@ -1,7 +1,7 @@
 import React from 'react'
 import './modal.css'
 import { FaPhoneAlt } from "react-icons/fa";
-import logo from '../../image/logo appl.jpg'
+import logo from '../../image/logolast.jpg'
 import Comp1 from '../Comp1';
 import Comp2 from '../Comp2';
 import Comp3 from '../Comp3';
@@ -33,8 +33,8 @@ const Modal = ({open,setOpen}) => {
                 <img className='logoModal' src={logo} alt="" />
               </div>
               <div className="call">
-                <p>In case of emergency, call us by phone:</p>
-                <b><p className='num'> <FaPhoneAlt /> 77899878998</p></b>
+                <p className='callP'>In case of emergency, call us by phone:</p>
+                <b><p className='num'> <FaPhoneAlt /> +1 773 678 35 68</p></b>
               </div>
             </div>
        <div className="center">

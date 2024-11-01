@@ -3,6 +3,43 @@
     height: 80vh;
     padding: 30px 0 ;
 }
+.formTouch{
+    width: 390px;
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 5px 5px 5px gray;
+    border-radius: 14px;
+    padding: 30px 20px;
+    gap: 40px;
+    input{
+        padding: 10px;
+        width: 300px;
+        border-radius: 7px;
+        outline: none;
+        border-top: none;
+        border-left: none ;
+        border-right: none;
+    }
+    textarea{
+        padding: 10px;
+        width: 300px;
+        border-radius: 7px;
+        outline: none;  
+    }
+}
+.btnSend{
+    margin-top: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 37px;
+    padding: 9px;
+    background-color: #0437F2;
+    border-radius: 10px;
+    color: white;
+}
 .frame{
     width: 500px;
     height: 400px;
@@ -13,7 +50,7 @@
     height: 100%;
     display: flex;
     margin-top: 30px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .hText{
@@ -29,15 +66,7 @@
     }
 }
 .rightMap{
-    width: 50%;
-}
-.flexMap{
-    margin-top: 25px;
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
+    width: 40%;
 }
 @media (max-width: 720px){
 .contGray{
@@ -70,6 +99,28 @@
     border-radius: 10px;
 }
 }
-@media (max-width: 740px){
-    
+@media (max-width: 500px){
+    .mapCont{
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+       flex-direction: column;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .leftMap{
+        width: 100%;
+    }
+    .formTouch{
+        width: 70%;
+        input,textarea{
+            width: 85%;
+        }
+    }
+    .rightMap{
+        width: 100%;
+    }
 }

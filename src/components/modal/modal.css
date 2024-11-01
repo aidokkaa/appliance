@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 70px;
+    z-index: 1000;
 }
 .modal{
     padding: 10px 0;
@@ -31,7 +32,7 @@
   position: absolute;
   right: 25px;
   top: 10px;
-  color: #20B2AA;
+  color: rgb(0, 99, 255);
   cursor: pointer;
 }
 .width{
@@ -53,7 +54,7 @@
 }
 .logoModal{
     width: 120px;
-    height: 100px;
+    height: 115px;
 }
 .center{
     display: flex;
@@ -94,11 +95,10 @@
     background-color: #efefef ;
 }
 .circle{
-    /* width: 20px; */
     height: 100%;
     transition: 1s;
    border-radius: 25px ;
-    background-color: #20B2AA;
+    background-color: rgb(0, 99, 255);
 }
 .info11 span{
     color: gray;
@@ -119,8 +119,9 @@
     flex-wrap: wrap;
 }
 .item{
-    border: 1px solid #40E0D0;
+    border: 1px solid rgb(0, 99, 255);
     border-radius: 10px;
+    color: white;
     width: 90px;
     height: 90px;
     display: flex;
@@ -131,7 +132,7 @@
     padding: 5px;
 }
 .activeIndex{
-    background-color: #40E0D0;
+    background-color: rgb(0, 99, 255);
 }
 .svg{
     font-size: 35px;
@@ -142,11 +143,13 @@
     color: #3a3b3c;
 }
 .item:hover {
-    background-color: #40E0D0;
+    background-color: rgb(0, 99, 255);
     color: white;
+    .itemName{
+        color: white;
+    }
   }
   .servInfoForm{
-    /* width: 80%; */
     margin: 30px auto;
     form{
         margin-top: 30px;
@@ -232,7 +235,7 @@
     cursor: pointer;
     width: 100px;
     border-radius: 10px;
-    background-color: #20B2AA;
+    background-color:rgb(0, 99, 255) ;
   }
   .btnPrev{
     padding: 7px;
@@ -243,7 +246,7 @@
     cursor: pointer;
     width: 100px;
     border-radius: 10px;
-    background-color: #20B2AA;
+    background-color: rgb(0, 99, 255);
   }
   .btnSubmit{
     padding: 7px;
@@ -254,7 +257,7 @@
     cursor: pointer;
     width: 100px;
     border-radius: 10px;
-    background-color: #20B2AA;
+    background-color: rgb(0, 99, 255);
   }
   .formSend{
     h2{
@@ -317,10 +320,6 @@
     .call {
         width: 250px;
         margin-top: 20px;
-        p{
-            font-family: 'Poppins',sans-serif;
-            font-size: 11px;
-        }
         .num{
             font-size: 14px;
             margin-top: 10px;
@@ -403,6 +402,9 @@
         display: flex;
         justify-content: space-between;
         width: 80%;
+      }
+      .callP{
+        font-size: 10px;
       }
   }
   

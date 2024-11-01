@@ -1,0 +1,18 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 40px 0;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.marquee {
+  display: flex;
+  gap: 80px; 
+  margin: 60px 0;
+  position: relative;
+}
+
+.marquee-item {
+  height: 90px; 
+}

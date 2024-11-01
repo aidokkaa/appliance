@@ -33,7 +33,7 @@ const Faq = ({faqRef}) => {
         Frequently Asked Questions
         </h1>
        <div className="faqCont">
-         <div className="faqItem">
+         <div className="faqItem" onClick={openWindow}>
             <div className="question">
             <h3 className='qText'>What does our company do?</h3>
             {openHeight ?
@@ -43,11 +43,10 @@ const Faq = ({faqRef}) => {
             </div>
             {
                 openHeight &&
-                <p className = 'pText' >A home appliance repair technician specializes in diagnosing and troubleshooting various household appliances such as refrigerators, 
-                    washing machines, microwave ovens, vacuum cleaners and others, regardless of brand.</p>
+                <p className = 'pText' >A home appliance repair technician specializes in diagnosing and troubleshooting various household appliances, such as refrigerators, washing machines, microwave ovens, vacuum cleaners, and other appliances, regardless of brand.</p>
             }
          </div>
-         <div className="faqItem">
+         <div className="faqItem" onClick={openWindow1}>
             <div className="question">
             <h3 className='qText'>What guarantees do you give?</h3>
             {openHeight1 ?
@@ -61,20 +60,7 @@ const Faq = ({faqRef}) => {
                      from 6 months to 3 years</p>
             }
          </div>
-         <div className="faqItem">
-            <div className="question">
-            <h3 className='qText'>Do I need to provide any documents when handing over for repairs?</h3>
-            {openHeight3 ?
-              <IoIosArrowUp className='iconFaq' onClick={openWindow3}/> :
-              <IoIosArrowDown className='iconFaq' onClick={openWindow3}/>
-            }
-            </div>
-            {
-                openHeight3 &&
-                <p className = 'pText'>When filling out a service request, you must have a warranty card and relevant documents for the equipment</p>
-            }
-         </div>
-         <div className="faqItem">
+         <div className="faqItem" onClick={openWindow4}>
             <div className="question">
            <h3 className='qText'>
            How is the repair going?</h3>
@@ -96,20 +82,7 @@ const Faq = ({faqRef}) => {
                </p>
             }
          </div>
-         <div className="faqItem">
-            <div className="question">
-            <h3 className='qText'>Should I repair or replace my existing appliance?</h3>
-            {openHeight5 ?
-              <IoIosArrowUp className='iconFaq' onClick={openWindow5}/> :
-              <IoIosArrowDown className='iconFaq' onClick={openWindow5}/>
-            }
-            </div>
-            {
-                openHeight5 &&
-                <p className = 'pText'>If you are comparing having your existing machine repaired or replacing it with a machine that is comparable in price with what you paid for your machine 10 or so years ago, you will not be making a valid comparison. The equipment is neither similar in quality nor durability for the same price. If you were to merely replace your existing household appliance with one that costs about what you paid a decade ago, you'll be repairing or junking the new machine every three to four years. You'll either have to pay more up front for a new, high-quality machine that will give you another 10 years of trouble-free operation or you pay less
-                 up front for a low-end machine and then pay-as-you-go for repairs.</p>
-            }
-         </div>
+       
         </div>
        </div>
     </div>

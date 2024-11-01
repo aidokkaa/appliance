@@ -1,6 +1,9 @@
 import React from 'react'
 import './about.css'
+import Modal from '../modal/Modal'
 const About = ({aboutRef}) => {
+  const [open,setOpen]=React.useState(false)
+  const [close,setClose]=React.useState(false)
   return (
     <div>
       <div ref={aboutRef} className="contGrayAbout">
@@ -19,9 +22,17 @@ const About = ({aboutRef}) => {
                 repairs. </p>
                 <p className='p2'>The prices of our services are quite reasonable (we keep our pricing policy lower than that of most competitors), and our guarantees are as transparent as possible. In addition to warranty obligations for the work itself, we also provide warranties for components with the help of which household appliances are repaired. Our service center uses only original spare parts or
                 high quality parts from certified analogue manufacturers.</p>
-                
+                <div onClick={()=>setOpen(true)} className="btnabout">
+              <p className='bookS'>
+              Book a service</p>
             </div>
+            {open &&
+               <Modal open = {open} setOpen= {setOpen}/>
+              }
+            </div>
+       
         </div>
+       
       </div>
    
     </div>

@@ -2,11 +2,28 @@
     padding: 0;
     margin: 0;
 }
+.ribbon {
+    position: absolute;
+    top: 81px; 
+    left: -153px; 
+    background-color: red; 
+    color: white; 
+    padding: 7px 120px; 
+    font-weight: bold;
+    font-size: 14px;
+    transform: rotate(-45deg); 
+    z-index: 1000; 
+}
+.spanR{
+    color: white;
+    font-size: 15px;
+}
+
 .main{
     padding: 10px 0;
     height: 80vh;
     background:  
-         url("https://res.cloudinary.com/liaison-inc/image/upload/c_fill,f_auto,q_auto/services/homeguide/backgrounds/appliance-repair.jpg") center;
+         url("https://cdnn21.img.ria.ru/images/07e5/07/15/1742189234_0:0:3072:2048_1920x0_80_0_0_b14578017cf11f1633cf263d5e7a316a.jpg") center;
          background-size: cover;
          object-fit: cover;
          background-repeat: no-repeat;
@@ -15,6 +32,38 @@
             color: white;
          }
 }
+.main-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .bg-main{
+    width: 100%;
+    height: 100%;
+;
+  }
+  
+  .content {
+  margin: 30px auto;
+  z-index: -1;
+  }
+
 .mainLeft{
     background-color: white;
     background: linear-gradient(
@@ -29,20 +78,24 @@
     justify-content: center;
     align-items: center;
 }
-.btn{
-    margin-top: 30px;
+.btnn{
+    margin-top: 5px;
     cursor: pointer;
-    width: 140px;
-    height: 30px;
-    padding: 7px;
-    background-color: #20B2AA;
+    width: 150px;
+    height: 37px;
+    padding: 9px;
+    background-color: #0437F2;
     border-radius: 10px;
+    color: white;
 }
 .marg{
     margin-top: 23px;
     h3{
         margin-top: 20px;
     }
+}
+.bookS{
+    color: white;
 }
 .flex2H3{
     margin-top: 10px;
@@ -64,6 +117,43 @@
     }
 }
 @media (max-width: 484px){
+    .ribbon{
+        position: absolute;
+        top: 55px; 
+        left: -73px; 
+        background-color: red; 
+        color: white; 
+        padding: 1px 57px; 
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        transform: rotate(-45deg); 
+        z-index: 1000; 
+    }
+    .content{
+        width: 90%;
+    }
+    .welcome{
+      font-size: 25px;
+    }
+    .spanR{
+        color: white;
+        font-size: 14px;
+        position: relative;
+        left: 10px;
+    }
+    .spanRmain{
+      display: none;
+    }
+    .background-video{
+        height: 65%;
+    }
+    svg{
+       width: 24px;
+       position: relative;
+       top: 7px;
+       left: 13px;
+    }
     .mainLeft h1{
       font-size: 25px;
     }
@@ -110,7 +200,7 @@
       border-radius: 5px;
       padding: 5px;
       height: 23px;
-      background-color: #20B2AA;
+      background-color: #0437F2;
       cursor: pointer;
       display: block;
     }
@@ -124,7 +214,8 @@
        position: fixed;
        top: 0;
        right: 0;
-       background-color: #20B2AA;
+       z-index: 1000;
+       background-color: #0437F2;
        height: 100vh;
        display: flex;
        justify-content: center;
