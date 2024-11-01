@@ -3,13 +3,12 @@
   white-space: nowrap;
   width: 100%;
   position: relative;
-  margin: 90px 0;
+  margin: 120px 0;
   display: flex;
 }
 .marquee {
   display: flex;
   gap: 80px;
-
   animation: marqueeScroll 20s linear infinite;
 }
 .marquee-item {
@@ -24,11 +23,11 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 485px) {
   .marquee {
     gap: 50px;
-    margin-top: 200px;
-    padding: 10px 0;
+    /* margin-top: 200px;
+    padding: 10px 0; */
     animation: marqueeScroll 15s linear infinite;
   }
   .marquee-container {
@@ -37,7 +36,6 @@
     width: 100%;
     position: relative;
     display: flex;
-    
   }
   .marquee-item {
     height: 60px;

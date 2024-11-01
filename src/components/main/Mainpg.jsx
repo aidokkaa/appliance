@@ -112,8 +112,9 @@ const Mainpg = () => {
       </div>
       </div>
     </div>
-    <CanHelp/>
     <Brands></Brands>
+    <CanHelp/>
+   
         <About aboutRef = {aboutRef}/>
         <Faq faqRef = {faqRef}/>
         <Advantages/>

@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="contacts">
           <h3 className='footerH'>Contacts</h3>
           <p>1234, Chicago, N Albany Ave</p>
-          <p>Phone:123-323-45-65</p>
+          <p>Phone:+1 773 678 35 68</p>
           <p>Email:appliance@gmail.com</p>
         </div>
         <div className="social">

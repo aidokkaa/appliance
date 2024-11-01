@@ -25,7 +25,7 @@ const Brands = () => {
     let position = window.innerWidth;
 
     const animate = () => {
-      position -= 2; // Скорость анимации
+      position -= 1; // Скорость анимации
       if (position < -totalWidth) {
         position = window.innerWidth; // Сброс позиции
       }
@@ -41,6 +41,7 @@ const Brands = () => {
       <div className="marquee" ref={marqueeRef}>
         <img src={kg} alt="Icon 3" className="marquee-item" />
         <img src={haier} alt="Icon 3" className="marquee-item" />
+        <img src={wirpool} alt="Icon 3" className="marquee-item" />
         <img src={bosh} alt="Icon 1" className="marquee-item" />
         <img src={subzero} alt="Icon 1" className="marquee-item" />
         <img src={jennair} alt="Icon 3" className="marquee-item" />
@@ -53,7 +54,6 @@ const Brands = () => {
         <img src={viking} alt="Icon 3" className="marquee-item" />
         <img src={ge} alt="Icon 3" className="marquee-item" />
         <img src={rational} alt="Icon 3" className="marquee-item" />
-        <img src={wirpool} alt="Icon 3" className="marquee-item" />
         <img src={haier} alt="Icon 3" className="marquee-item" />
       </div>
     </div>
