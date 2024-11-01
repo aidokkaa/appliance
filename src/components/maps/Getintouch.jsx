@@ -6,7 +6,16 @@ const Maps = () => {
     <div>
      <div className="contGray">
      <div className="mapCont">
-     <div className="rightMap">
+        <div className="leftMap">
+         <h1 className='hText'>Get in touch</h1>
+         <form className='formTouch'>
+          <input placeholder='Your name' type="text" />
+          <input placeholder='Phone number' type="text" />
+          <textarea placeholder='Message' name="" id=""></textarea>
+          <button onClick={()=>alert('We will contact you soon!')} className='btnSend'>Send</button>
+         </form>
+        </div>
+        <div className="rightMap">
         <video 
         className="frame" 
         width="600" 
@@ -19,16 +28,6 @@ const Maps = () => {
         Your browser does not support the video tag.
       </video>
         </div>
-        <div className="leftMap">
-         <h1 className='hText'>Get in touch</h1>
-         <form className='formTouch'>
-          <input placeholder='Your name' type="text" />
-          <input placeholder='Phone number' type="text" />
-          <textarea placeholder='Message' name="" id=""></textarea>
-          <button onClick={()=>alert('We will contact you soon!')} className='btnSend'>Send</button>
-         </form>
-        </div>
-      
         </div>
      </div>
     </div>

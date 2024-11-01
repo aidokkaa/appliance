@@ -16,3 +16,22 @@
 .marquee-item {
   height: 90px; 
 }
+@media (max-width: 484px){
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 30px 0;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+  }
+  .marquee {
+    display: flex;
+    gap: 50px; 
+    margin: 40px 0;
+    position: relative;
+  }
+  .marquee-item {
+    height: 50px; 
+  }
+}
