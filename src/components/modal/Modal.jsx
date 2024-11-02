@@ -21,7 +21,7 @@ const Modal = ({open,setOpen}) => {
               </div>
               <div className="call">
                 <p className='callP'>In case of emergency, call us by phone:</p>
-                <b><a style={{textDecoration:"none"}} href="tel:+17736783568"><p className='num'> <FaPhoneAlt /> +1 773 678 35 68</p></a></b>
+                <b><a style={{textDecoration:"none"}} href="tel:+17736783568"><p className='num'> +1 773 678 35 68</p></a></b>
               </div>
             </div>
           <Comp3  />       

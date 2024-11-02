@@ -8,7 +8,8 @@ const Comp3 = () => {
   const [user,setUser]=React.useState({
   firstName:'',
   phoneNumber: '',
-  zipCode:''
+  zipCode:'',
+  problems:''
  })
 
  const handleChange = (e)=>{
@@ -39,17 +40,14 @@ const Comp3 = () => {
     <div >
      <form className='formSend' ref={form} onSubmit={sendEmail}>
      <div className="infos">
-     {/* <div className="cInfo"> */}
 <h2>Make appointment</h2>
-{/* <p className='pReq'>* indicates a required field</p> */}
 <div className="servInfoForm">
            <input required placeholder='Your name *' onChange={handleChange} name = 'firstName'  type="text" />
            <input  placeholder='Zip Code *' onChange={handleChange}  name = "zipCode" type="number" />
            <input required placeholder='Phone number *'onChange={handleChange}  name = "phoneNumber" type="number" />
-            <input type="text" placeholder='Description of the problem' />
+            <input type="text" placeholder='Description of the problem' name='problems' />
             <br />
           <span className='problems'>(not cooling, strange noises, water leaks etc.)</span>
-       {/* </div>  */}
        </div>
      </div>
         <p className='errText'> {errText}</p>
