@@ -13,7 +13,8 @@ import Advantages from '../advantages/Advantages'
 import logo from '../../image/logolast.jpg'
 import video from '../../image/video.mp4';
 import rotate from '../../image/rotate.webm'
-import burger from '../../image/burger.png'
+import burger from '../../image/burger.png';
+import main from '../../image/main.png'
 const Mainpg = () => {
   const aboutRef = React.useRef(null)
   const faqRef = React.useRef(null)
@@ -104,7 +105,7 @@ const Mainpg = () => {
         <h1 className='welcome'>Welcome to Our Home Appliance Repair Service</h1>
         <p className='offer'>We offer professional repair services for all your home appliances.</p>
       </div>
-      <video className="background-video"  autoPlay muted loop playsInline preload="auto">
+      <video className="background-video"  autoPlay muted loop playsInline preload="auto" poster={main}>
         <source src={video} type="video/mp4" />
         <source src={rotate} type="video/webm"></source>
         Your browser does not support the video tag.
