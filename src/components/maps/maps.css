@@ -102,8 +102,8 @@
 @media (max-width: 500px){
     .contGray{
         width: 100%;
-        height: 60vh;
-        padding: 30px 0 ;
+        height: 75vh;
+        padding: 5px 0 ;
     }
     .hText{
         text-align: center;
@@ -130,8 +130,5 @@
         input,textarea{
             width: 85%;
         }
-    }
-    .rightMap{
-        width: 100%;
     }
 }

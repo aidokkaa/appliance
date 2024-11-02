@@ -57,7 +57,7 @@ const Faq = ({faqRef}) => {
             {
                 openHeight1 &&
                 <p className = 'pText'> We provide guarantees for work performed
-                     from 6 months to 3 years</p>
+                     from 45 days and above</p>
             }
          </div>
          <div className="faqItem" onClick={openWindow4}>

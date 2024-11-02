@@ -15,19 +15,6 @@ const Maps = () => {
           <button onClick={()=>alert('We will contact you soon!')} className='btnSend'>Send</button>
          </form>
         </div>
-        {/* <div className="rightMap">
-        <video 
-        className="frame" 
-        width="600" 
-        height="450" 
-        autoPlay 
-        loop 
-        muted
-      >
-        <source src={holod} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-        </div> */}
         </div>
      </div>
     </div>
