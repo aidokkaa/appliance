@@ -103,11 +103,10 @@ const Mainpg = () => {
         <h1 className='welcome'>Welcome to Our Home Appliance Repair Service</h1>
         <p className='offer'>We offer professional repair services for all your home appliances.</p>
       </div>
-      <video className="background-video"  autoPlay muted loop playsInline poster={logo}>
+      <video className="background-video"  autoPlay muted loop playsInline preload="auto" poster={logo}>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    
     </div>
     <Brands></Brands>
     <CanHelp/>
