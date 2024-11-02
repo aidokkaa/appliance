@@ -42,7 +42,7 @@
   @media (max-width: 484px){
     .contGrayAbout{
       padding: 5px 0;
-      height: 100vh;
+      height:50vh;
       .h1About{
         font-size: 25px;
       }
@@ -87,7 +87,7 @@
   @media (max-width: 740px){
     .contGrayAbout{
       padding: 50px 0 0;
-      height: 70vh;
+      height: 60vh;
       .h1About{
         font-size: 25px;
       }

@@ -47,10 +47,10 @@ justify-content: space-between;
         margin-top: 0;
     }
     .canHelp{
-        height:110vh;
+        height:80vh;
     }
     .helpCont{
-        height: 80vh;
+        height: 90vh;
         width: 90%;
         display: flex;
         justify-content: center;
