@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="rights">
     <span> 2024. </span>
       <span>All rights reserved</span>
-      <p>Privacy Policy</p>
+      <a style={{textDecoration:"none"}} href="https://www.privacypolicies.com/live/21dde6a6-73bc-4d83-b956-72a9cfc8027b"><p>Privacy Policy</p></a>
 
       </div>
     </div>

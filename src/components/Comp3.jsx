@@ -1,72 +1,23 @@
 import React from 'react'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { LuRefrigerator } from "react-icons/lu";
-import { FaPhoneAlt } from "react-icons/fa";
-import { HiArrowSmRight } from "react-icons/hi";
-import { GiWashingMachine } from "react-icons/gi";
-import { BiSolidWasher } from "react-icons/bi";
-import { BiSolidDryer } from "react-icons/bi";
-import { MdMicrowave } from "react-icons/md";
-import { PiOvenBold } from "react-icons/pi";
-import { LuDices } from "react-icons/lu";
-import { GiAutoRepair } from "react-icons/gi";
-const techItems = [
-  {
-    itemName:"Refrigerator",
-    itemSvg:<LuRefrigerator/>
-  },
-  {
-    itemName:"DishWasher",
-    itemSvg: <BiSolidWasher />
-  },
-  {
-    itemName:"Washing",
-    itemSvg:<GiWashingMachine />
-  },
-  {
-    itemName:"Dryer",
-    itemSvg:<BiSolidDryer/>
-  },
-  {
-    itemName:"Microwave",
-    itemSvg:<MdMicrowave/>
-  },
-  {
-    itemName:"Oven",
-    itemSvg:<PiOvenBold/>
-  },
-  {
-    itemName:"Ice",
-    itemSvg:<LuDices/>
-  },
-  {
-    itemName:"Other",
-    itemSvg:<GiAutoRepair/>
-  }
-];
-const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,selectedDate,setDate}) => {
+
+const Comp3 = () => {
   const form = useRef();
- const [user,setUser]=React.useState({
+  const [errText,setErrText]=React.useState('');
+  const [user,setUser]=React.useState({
   firstName:'',
-  lastName:'',
-  email:'',
   phoneNumber: '',
-  address:"",
-  apartment:'',
-  city:'',
-  state:'',
   zipCode:''
  })
 
- const itemCat = techItems[category].itemName;
  const handleChange = (e)=>{
   setUser(prev=>({...prev,[e.target.name]:e.target.value}))
  }
  const sendEmail = (e) => {
   e.preventDefault();
-  
-  emailjs
+  if(user.firstName && user.phoneNumber && user.zipCode){
+    emailjs
     .sendForm('service_lr1yusg', 'template_9cq0fkf', form.current, {
       publicKey: 'JJsLQIXT5guokDKSf',
     })
@@ -78,35 +29,31 @@ const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,select
         console.log('FAILED...', error.text);
       },
     );
-    e.target.reset()
+    e.target.reset();
+    alert('Thank you! We will contact you within 15 minutes!')
+  }else{
+    setErrText('Try again')
+  }
 };
   return (
     <div >
      <form className='formSend' ref={form} onSubmit={sendEmail}>
      <div className="infos">
-     <div className="cInfo">
-<h2>Contact Information</h2>
-      <input required onChange={handleChange} placeholder='First name' name = 'firstName' type="text" />
-      <input required onChange={handleChange} placeholder='Last name' name = 'lastName' type="text" />
-        <input onChange={handleChange} placeholder = 'phonenumber' name = "phoneNumber" type="number" />
-</div>
-        <div className="sInfo">
-        <h2>Service address</h2>
-        <input  type="text" name='itemCat' style={{display:"none"}} value={itemCat} />
-        <input placeholder='Select a brand' style={{display:"none"}} type="text" name='selectBrand' value={selectBrand} />
-        <input type="text" name='selectedDate' style={{display:"none"}} value={selectedDate}/>
-        <input type="text" style={{display:"none"}} value={selectTime} name='selectTime' placeholder='time' />
-        <input required onChange={handleChange} placeholder='Address' name = "address" type="text" />
-        <input required onChange={handleChange} name = "apartment" type="text" placeholder='Apartment' />
-        <input required onChange={handleChange} placeholder='City' name = "city" type="text" />
-        <input required onChange={handleChange} placeholder='State' name = "state" type="text" />
-        <input required onChange={handleChange} placeholder='Zip Code' name = "zipCode" type="number" />
-        </div>
+     {/* <div className="cInfo"> */}
+<h2>Make appointment</h2>
+{/* <p className='pReq'>* indicates a required field</p> */}
+<div className="servInfoForm">
+           <input required placeholder='Your name *' onChange={handleChange} name = 'firstName'  type="text" />
+           <input  placeholder='Zip Code *' onChange={handleChange}  name = "zipCode" type="number" />
+           <input required placeholder='Phone number *'onChange={handleChange}  name = "phoneNumber" type="number" />
+            <input type="text" placeholder='Description of the problem' />
+            <br />
+          <span className='problems'>(not cooling, strange noises, water leaks etc.)</span>
+       {/* </div>  */}
+       </div>
      </div>
-        <div className="btns">
-           <button className='btnPrev' onClick={()=>setWidth(width-50)}>Prev</button>
-           <button onClick={()=>alert('Thank you! We will contact with you within 15 minutes!')} className='btnSubmit' type='submit'>Submit</button>
-           </div>
+        <p className='errText'> {errText}</p>
+           <button className='btnSubmit' type='submit'>Submit</button>
      </form>
     </div>
   )

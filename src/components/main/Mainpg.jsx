@@ -11,7 +11,7 @@ import Gallery from '../gallery/Gallery'
 import Brands from '../brands/Brands'
 import Advantages from '../advantages/Advantages'
 import logo from '../../image/logolast.jpg'
-import video from '../../image/video.mp4'
+import video from '../../image/rotate.webm'
 import burger from '../../image/burger.png'
 const Mainpg = () => {
   const aboutRef = React.useRef(null)
