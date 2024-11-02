@@ -1,5 +1,5 @@
 .helpCont{
-height: 50vh;
+height: 65vh;
 width: 85%;
 margin: 0px auto;
 display: flex;
@@ -47,10 +47,10 @@ justify-content: space-between;
         margin-top: 0;
     }
     .canHelp{
-        height: 95vh;
+        height: 100vh;
     }
     .helpCont{
-        min-height: 100vh;
+        height: 80vh;
         width: 90%;
         display: flex;
         justify-content: center;

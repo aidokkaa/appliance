@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState,useRef } from 'react';
 import './header.css';
-import { FaPhone } from "react-icons/fa6";
 const Header = () => {
   return (
     <div className='header'>
@@ -21,7 +20,6 @@ const Header = () => {
         <div className="flex3">
             <span>Call us:</span>
             <hr />
-            {/* <h3> <FaPhone className='phone'/><a href="tel:+15712750418">9879098767</a></h3> */}
         </div>
       </div>
       

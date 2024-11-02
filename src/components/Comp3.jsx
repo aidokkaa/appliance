@@ -88,15 +88,14 @@ const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,select
 <h2>Contact Information</h2>
       <input required onChange={handleChange} placeholder='First name' name = 'firstName' type="text" />
       <input required onChange={handleChange} placeholder='Last name' name = 'lastName' type="text" />
-      <input required onChange={handleChange} placeholder='Email' name = 'email' type="email" />
         <input onChange={handleChange} placeholder = 'phonenumber' name = "phoneNumber" type="number" />
 </div>
         <div className="sInfo">
         <h2>Service address</h2>
-        <input required type="text" name='itemCat' style={{display:"none"}} value={itemCat} />
-        <input required placeholder='Select a brand' style={{display:"none"}} type="text" name='selectBrand' value={selectBrand} />
-        <input required type="text" name='selectedDate' style={{display:"none"}} value={selectedDate}/>
-        <input required type="text" style={{display:"none"}} value={selectTime} name='selectTime' placeholder='time' />
+        <input  type="text" name='itemCat' style={{display:"none"}} value={itemCat} />
+        <input placeholder='Select a brand' style={{display:"none"}} type="text" name='selectBrand' value={selectBrand} />
+        <input type="text" name='selectedDate' style={{display:"none"}} value={selectedDate}/>
+        <input type="text" style={{display:"none"}} value={selectTime} name='selectTime' placeholder='time' />
         <input required onChange={handleChange} placeholder='Address' name = "address" type="text" />
         <input required onChange={handleChange} name = "apartment" type="text" placeholder='Apartment' />
         <input required onChange={handleChange} placeholder='City' name = "city" type="text" />
@@ -104,7 +103,6 @@ const Comp3 = ({category,width,setWidth,selectBrand,selectTime,setSelTime,select
         <input required onChange={handleChange} placeholder='Zip Code' name = "zipCode" type="number" />
         </div>
      </div>
-  
         <div className="btns">
            <button className='btnPrev' onClick={()=>setWidth(width-50)}>Prev</button>
            <button onClick={()=>alert('Thank you! We will contact with you within 15 minutes!')} className='btnSubmit' type='submit'>Submit</button>

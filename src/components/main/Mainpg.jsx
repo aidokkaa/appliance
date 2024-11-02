@@ -110,8 +110,9 @@ const Mainpg = () => {
     </div>
     
     <CanHelp/>
-    <Brands></Brands>
+   
         <About aboutRef = {aboutRef}/>
+        <Brands></Brands>
         <Faq faqRef = {faqRef}/>
         <Advantages/>
         <div style={{padding:"60px"}} className="reviews">
