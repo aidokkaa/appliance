@@ -71,7 +71,7 @@
 .info{
     display: flex;
    color: gray;
-   margin: 15px;
+   margin-top: 15px;
     font-size: 12px;
     gap: 80px;
 }
@@ -297,6 +297,9 @@
   @media (max-width: 484px){
     .modal{
         width: 85%;
+    }
+    .width{
+        width: 100%;
     }
     .progress{
         width: 270px;

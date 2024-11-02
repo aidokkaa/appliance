@@ -11,7 +11,7 @@ import Gallery from '../gallery/Gallery'
 import Brands from '../brands/Brands'
 import Advantages from '../advantages/Advantages'
 import logo from '../../image/logolast.jpg'
-import video from '../../image/electric.mov'
+import video from '../../image/video.mp4'
 import burger from '../../image/burger.png'
 const Mainpg = () => {
   const aboutRef = React.useRef(null)
@@ -73,11 +73,10 @@ const Mainpg = () => {
            <img src={burger} alt="" className='burger'/>
         </div>
       </div>
-      
     </div>
   {close && 
     <div className="burgerMenu">
-    <div onClick={()=>setClose(false)}  className="closeMenu">X</div>
+    <div onClick={()=>setClose(false)} className="closeMenu">X</div>
     <a href="tel:+17736783568">Call us</a>
     <a onClick={()=>{
         aboutRef.current?.scrollIntoView({
@@ -99,17 +98,16 @@ const Mainpg = () => {
         })
       }} href="#review"><span>Reviews</span></a>
     </div>}
-            <div className="main-section">
-      <div className="bg-main">
-      <video className="background-video"  autoPlay muted loop playsInline>
-        <source src={video} media="(min-width: 500px)" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="content">
+            <div onClick={()=>setClose(false)} className="main-section">
+            <div className="content">
         <h1 className='welcome'>Welcome to Our Home Appliance Repair Service</h1>
         <p className='offer'>We offer professional repair services for all your home appliances.</p>
       </div>
-      </div>
+      <video className="background-video"  autoPlay muted loop playsInline poster={logo}>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    
     </div>
     <Brands></Brands>
     <CanHelp/>
@@ -124,6 +122,7 @@ const Mainpg = () => {
         <Maps></Maps>
         <Footer></Footer>
     </div>
+   
   )
 }
 
