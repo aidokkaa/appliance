@@ -23,7 +23,7 @@ const Modal = ({open,setOpen}) => {
   return (
     <div>
         <div className="overlay" onClick={()=>setOpen(false)}>
-           <div  className={open ?  "modal act2" : "modal"} onClick={e=>e.stopPropagation()}>
+           <div  className='modal' onClick={e=>e.stopPropagation()}>
             <div onClick ={()=>setOpen(false)} className="close">
               <h2>x</h2>
             </div>
@@ -44,7 +44,7 @@ const Modal = ({open,setOpen}) => {
        <div className="info">
         <div className="span">
         <span>Service
-        Information</span>
+        Info</span>
         </div>
        <div className="span">
        <span>Schedule
@@ -52,7 +52,7 @@ const Modal = ({open,setOpen}) => {
        </div>
         <div className="span">
         <span>Contact
-        Information</span>
+        Info</span>
         </div>
        </div>
        </div>

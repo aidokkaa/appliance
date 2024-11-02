@@ -103,8 +103,6 @@ const Comp1 = ({width,setWidth,selectBrand,setSelectBrand,category,setCategory})
             <option value="KitchenAid">KitchenAid</option>
            </select>
            <p className='errText'> {errText}</p>
-           <p>(Optional) Please describe your service needs:</p>
-           <textarea className='desc' type="text" placeholder='Dishwasher not working'/>
            <div className="btns1">
            <button className='btnNext' onClick={btnNext}>Next</button>
            </div>

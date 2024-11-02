@@ -42,10 +42,6 @@
 .modal::-webkit-scrollbar {
     display: none;
   }
-.act2{
-    transform: scale(1); 
-    transition: 3s;
-}
 .top{
     margin-top: 40px;
     display: flex;
@@ -193,13 +189,13 @@
   }
 
   .select{
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
   select{
     width: 250px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 10px;
     color: gray;
   }
@@ -209,6 +205,9 @@
     padding: 7px;
     border-radius: 10px;
     outline: none;
+    appearance: none; 
+    cursor: pointer;
+    background-color: transparent;
   }
   .btns{
     display: flex;
@@ -296,7 +295,7 @@
   }
   @media (max-width: 484px){
     .modal{
-        width: 85%;
+        width: 90%;
     }
     .width{
         width: 100%;
@@ -330,6 +329,20 @@
     }
     .help{
         font-size: 25px;
+    }
+    .select{
+        width: 80%;
+        display: flex;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        select{
+            width: 250px;
+            padding: 10px;
+            border-radius: 10px;
+            color: gray;
+          }
     }
     .selectP{
         font-size: 16px;

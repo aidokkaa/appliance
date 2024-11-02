@@ -3,12 +3,12 @@
   white-space: nowrap;
   width: 100%;
   display: flex;
+  margin: 150px 0;
   
 }
 .marquee {
   display: flex;
   animation: scroll 20s linear infinite;
-  margin: 100px 0;
 }
 
 .marquee-item {
@@ -26,10 +26,12 @@
   }
 }
 @media (max-width: 484px){
+  .marquee-container{
+  margin: 350px 0;
+  }
   .marquee {
     display: flex;
     animation: scroll 20s linear infinite;
-    margin: 30px 0;
   }
   .marquee-item {
     width: 75px; 

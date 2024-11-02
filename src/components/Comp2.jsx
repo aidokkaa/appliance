@@ -10,7 +10,6 @@ const Comp2 = ({selectedDate,setDate,width,setWidth,selectTime,setSelTime}) => {
         setWidth(width+50)
       }
   }
-
   return (
     <div>
      <div className="title">
@@ -21,12 +20,16 @@ const Comp2 = ({selectedDate,setDate,width,setWidth,selectTime,setSelTime}) => {
      </div>
 <form action="">
 <div className="select">
-      <DatePicker required className='picker' 
+      <DatePicker required
+      className='picker' 
       selected={selectedDate} 
       value={selectedDate}
       placeholderText='Select a date'
       onChange={date=>setDate(date)}
-      minDate={new Date()}/>
+      minDate={new Date()}
+      customInput={
+        <input type="text" className="picker" placeholder="Select a date" />
+    }/>
       <br />
       <select required onChange={(e)=>setSelTime(e.target.value)} name="" id="">
         <option value="select">Select a time</option>
