@@ -1,64 +1,26 @@
 .contGray{
     width: 100%;
-    height: 80vh;
-    padding: 10px 0 50px 0 ;
-}
-.formTouch{
-    width: 390px;
-    min-height: 380px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 2px 5px 5px 5px gray;
-    border-radius: 14px;
-    padding: 30px 20px;
-    gap: 40px;
-    input{
-        padding: 10px;
-        width: 300px;
-        border-radius: 7px;
-        outline: none;
-        border-top: none;
-        border-left: none ;
-        border-right: none;
-    }
-    textarea{
-        padding: 10px;
-        width: 300px;
-        border-radius: 7px;
-        outline: none;  
-    }
+    height: 50vh;
 }
 .btnSend{
     margin-top: 5px;
     cursor: pointer;
     width: 150px;
-    height: 45px;
+    height: 47px;
     padding:9px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     background-color: rgb(0, 99, 255);
     border-radius: 10px;
     color: white;
 }
-.frame{
-    width: 500px;
-    height: 400px;
-}
 .mapCont{
     width: 85%;
     margin: 0 auto;
-    height: 100%;
+    height: 70%;
     display: flex;
-    margin-top: 30px;
     justify-content: space-evenly;
     align-items: center;
-}
-.hText{
-    margin-bottom: 30px;
-    text-align: left;
-    font-size: 27px;
 }
 .leftMap{
     width: 40%;
@@ -68,12 +30,16 @@
         text-align: left;
     }
 }
-.rightMap{
-    width: 40%;
+.divText p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 23px;
+    line-height: 36px;
+    margin-bottom: 50px;
 }
 @media (max-width: 720px){
 .contGray{
-   padding: 20px 0;
+  
    .mapCont{
     width: 90%;
     margin-top: 0;
@@ -81,7 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    /* gap: 50px; */
    }
    .hText{
      font-size: 27px;
@@ -96,17 +62,11 @@
 .rightMap{
     width: 90%;
 }
-.frame{
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-}
 }
 @media (max-width: 500px){
     .contGray{
         width: 100%;
-        height: 70vh;
-        padding: 5px 0 ;
+        height: 50vh;
     }
     .hText{
         text-align: center;
@@ -114,7 +74,6 @@
     .mapCont{
         width: 85%;
         margin: 0 auto;
-        height: 55vh;
         display: flex;
        flex-direction: column;
         margin-top: 0;

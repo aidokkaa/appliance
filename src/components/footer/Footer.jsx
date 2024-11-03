@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='footer'>
       <div className="footerInner">
         <div className="company">
-          <h3 className='footerH'>Company</h3>
+          <h3 className='footerH'>Smart Appliance Repair</h3>
           <p>About Company</p>
           <p>Services</p>
           <p>Contacts</p>

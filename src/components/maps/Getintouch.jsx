@@ -1,19 +1,20 @@
 import React from 'react'
 import './maps.css';
-import holod from '../../image/holod.mp4'
+import Modal from '../modal/Modal';
 const Maps = () => {
+  const [open,setOpen]=React.useState(false)
   return (
     <div>
      <div className="contGray">
      <div className="mapCont">
         <div className="leftMap">
-         <h1 className='hText'>Get in touch</h1>
-         <form className='formTouch'>
-          <input placeholder='Your name' type="text" />
-          <input placeholder='Phone number' type="text" />
-          <textarea placeholder='Message' name="" id=""></textarea>
-          <button onClick={()=>alert('We will contact you soon!')} className='btnSend'>Send</button>
-         </form>
+          <div className="divText">
+            <p>Regular maintenance increases the life of your equipment. Book a service with us so that your equipment always works like new!</p>
+            <button onClick={()=>setOpen(true)} className='btnSend'>Book now!</button>
+            {open &&
+               <Modal open = {open} setOpen= {setOpen}/>
+              }
+          </div>
         </div>
         </div>
      </div>
