@@ -21,7 +21,7 @@
     margin-top: 50px;
     margin-bottom: 30px;
     background-color: white;
-    max-height: 78vh;
+    max-height: 80vh;
     width: 50%; 
     overflow-y: scroll;
     box-shadow: 4px 5px 5px 10px gray;
@@ -147,7 +147,7 @@
     }
   }
   .servInfoForm{
-    margin: 15px auto;
+    margin: 15px 0 0 0;
     form{
         margin-top: 25px;
         display: flex;
@@ -156,13 +156,6 @@
         flex-direction: column;
         p{
             margin-top: 30px;
-        }
-        textarea{
-            margin-top: 30px;
-            width: 100%;
-            padding: 10px;
-            border-radius: 10px;
-            height: 70px; 
         }
     }
   }

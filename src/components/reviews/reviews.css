@@ -4,12 +4,12 @@
 @media (max-width: 740px){
   .reviewsDiv{
     h1{
-      font-size: 25px;
+      font-size: 26px;
     }
   }
 }
 @media (max-width: 484px){
   .reviewsDiv{
-    font-size: 25px;
+    font-size: 26px;
   }
 }

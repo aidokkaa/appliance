@@ -39,29 +39,26 @@
         height: 125vh;
         padding: 40px 0 60px;
         h1{
-            font-size: 25px;
+            font-size: 27px;
         }
         .child1{
             width: 75%;
             height: 140px;
             margin-top: 30px;
-            .iconC{
-             font-size: 14px;
-            }
                 h3{
                     margin-top: 20px;
-                    font-size: 24px;
+                    font-size: 22px;
                 }
                 .iconC{
-                    width: 70px;
-                    height: 70px;
+                    width: 65px;
+                    height: 65px;
                     color: white;
                 }
                 .iconCR{
                     text-align: center;
                     margin: 0 auto;
-                    width: 75px;
-                    height: 70px;
+                    width: 65px;
+                    height: 65px;
                     color: white;  
                 }
                 p{

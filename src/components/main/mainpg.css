@@ -87,7 +87,8 @@
         z-index: 1000; 
     }
     .content{
-        width: 90%;
+        width: 95%;
+        font-size: 21.5px;
     }
     .welcome{
       font-size: 25px;
@@ -156,19 +157,19 @@
     }
     .book{
         margin-top: 45px;
-        width: 123px;
+        width: 140px;
         margin-right: 12px;
         color: #ffffff;
         border-radius: 5px;
         padding: 5px;
-        height: 30px;
+        height: 33px;
         background-color: rgb(0, 99, 255);
         cursor: pointer;
         display: block;
         p{
-            font-size: 16.5px;
+            font-size: 17px;
             color: white;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
     .burgerDiv img{

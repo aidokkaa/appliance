@@ -34,9 +34,11 @@
     margin-top: 5px;
     cursor: pointer;
     width: 150px;
-    height: 37px;
-    padding: 9px;
-    background-color: #0437F2;
+    height: 45px;
+    padding:9px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(0, 99, 255);
     border-radius: 10px;
     color: white;
 }
@@ -56,6 +58,7 @@
 .hText{
     margin-bottom: 30px;
     text-align: left;
+    font-size: 27px;
 }
 .leftMap{
     width: 40%;
@@ -81,7 +84,7 @@
     gap: 50px;
    }
    .hText{
-     font-size: 25px;
+     font-size: 27px;
    }
    .pLeft{
      font-size: 15px;
@@ -129,6 +132,9 @@
         margin: 0 auto;
         input,textarea{
             width: 85%;
+            padding: 11px;
+            width: 250px;
+            font-size: 16px;
         }
     }
 }
