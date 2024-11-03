@@ -1,7 +1,8 @@
 import React from 'react'
 import './reviews.css'
 import './flickity.css'
-import Flickity from 'react-flickity-component'
+import Flickity from 'react-flickity-component';
+import star from '../../image/star.png'
 const Reviews = ({rewRef}) => {
   const flickityOptions = {
     initialIndex: 2
@@ -9,6 +10,13 @@ const Reviews = ({rewRef}) => {
   return (
     <div className='reviewsDiv' ref={rewRef}>
       <h1 style={{marginTop:"10px"}}>Read What Our Customers Have to Say</h1>
+      <div className='stars'>
+        <img className='star' src={star} alt="" />
+        <img className='star' src={star} alt="" />
+        <img className='star' src={star} alt="" />
+        <img className='star' src={star} alt="" />
+        <img className='star' src={star} alt="" />
+      </div>
 <Flickity 
       className={'carousel'}
       elementType={'div'} 
@@ -17,7 +25,6 @@ const Reviews = ({rewRef}) => {
       reloadOnUpdate 
       static 
     >
-    
       <div style={{boxShadow:"5px 5px 5px 5px gray",borderRadius:"10px", padding:"10px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",width:"250px",minHeight:"280px",margin:"70px"}} >
       <img style={{width:"50px", borderRadius:"50%",margin:"20px",height:'50px'}} src="https://amobit.com/wp-content/uploads/2018/12/adminin-100x100.jpg" alt="" />
                 <p style={{fontSize:"14px"}}>"I contacted him because the Electrolux electric oven was not heating up. The operator accepted the order and the next day, at the agreed time, the polite and competent master arrived. The control unit was dismantled, repairs were promptly carried out at the

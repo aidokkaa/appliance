@@ -67,8 +67,10 @@
   .btnabout{
     cursor: pointer;
     margin-top: 30px;
-    width: 157px;
-    height: 30px;
+    width: 150px;
+    color: #ffffff;
+    padding: 5px;
+    height: 28px;
     padding: 11px;
     color: white;
     font-family: 'Poppins';
@@ -76,9 +78,8 @@
     cursor: pointer;
     background-color: rgb(0, 99, 255);
     border-radius: 10px;
-    color: white;
     .bookS{
-      font-size: 20px;
+      font-size: 19px;
     }
   }
   @media (max-width: 740px){
@@ -106,7 +107,7 @@
         display: none;
       }
       p{
-        font-size: 16px;
+        font-size: 15px;
       }
     }
     .aboutLeft{

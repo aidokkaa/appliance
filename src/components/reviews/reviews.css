@@ -1,6 +1,11 @@
 .reviewsDiv{
   padding: 0 0 60px;
 }
+.star{
+  width: 19px;
+  height: 19px;
+  margin-left: 5px;
+}
 @media (max-width: 740px){
   .reviewsDiv{
     h1{
