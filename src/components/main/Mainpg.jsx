@@ -66,7 +66,7 @@ const Mainpg = () => {
       </div>
         </div>
         <div  onClick={()=>setOpen(true)} className="book">
-         <p> Book service</p>
+         <p> Book </p>
         </div>
         {open &&
                <Modal open = {open} setOpen= {setOpen}/>

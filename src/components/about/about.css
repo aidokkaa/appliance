@@ -71,7 +71,7 @@
     color: #ffffff;
     padding: 5px;
     height: 28px;
-    padding: 11px;
+    padding: 10px;
     color: white;
     font-family: 'Poppins';
     font-weight: 500;
@@ -85,7 +85,7 @@
   @media (max-width: 740px){
     .contGrayAbout{
       padding: 50px 0 0;
-      height: 60vh;
+      height: 65vh;
       .h1About{
         font-size: 27px;
       }
