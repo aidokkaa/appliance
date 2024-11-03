@@ -57,7 +57,7 @@ const Mainpg = () => {
           })
         }} href="#review"><span className='spanH'>Reviews</span></a>
         <div onClick={()=>setOpen(true)} className="btnn">
-              <p style={{fontSize:"14px"}} className='bookS'>
+              <p style={{fontSize:"18px"}} className='bookS'>
               Schedule your service!</p>
             </div>
             {open &&
@@ -66,7 +66,7 @@ const Mainpg = () => {
       </div>
         </div>
         <div  onClick={()=>setOpen(true)} className="book">
-          Book service
+         <p> Book service</p>
         </div>
         {open &&
                <Modal open = {open} setOpen= {setOpen}/>

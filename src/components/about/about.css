@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     p{
-      font-size: 14px;
+      font-size: 18px;
       line-height: 25px;
     }
   }
@@ -64,7 +64,7 @@
         display: none;
       }
       p{
-        font-size: 14px;
+        font-size: 18px;
       }
     }
     .aboutLeft{
@@ -77,9 +77,15 @@
   .btnabout{
     cursor: pointer;
     margin-top: 30px;
-    width: 140px;
-    height: 25px;
-    padding: 6px;
+    width: 130px;
+    padding: 9px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    width: 127px;
+    
     background-color: rgb(0, 99, 255);
     border-radius: 10px;
     color: white;

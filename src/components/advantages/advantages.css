@@ -48,9 +48,25 @@
             .iconC{
              font-size: 14px;
             }
-            h3{
-           font-size: 16px;
-            }
+                h3{
+                    margin-top: 20px;
+                    font-size: 24px;
+                }
+                .iconC{
+                    width: 70px;
+                    height: 70px;
+                    color: white;
+                }
+                .iconCR{
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 75px;
+                    height: 70px;
+                    color: white;  
+                }
+                p{
+                    font-size: 17px;
+                }
         }
     }
 }

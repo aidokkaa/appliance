@@ -75,10 +75,10 @@
     margin-top: 30px;
     p{
         font-family: 'Poppins',sans-serif;
-        font-size: 11px;
+        font-size: 16px;
     }
     .num{
-        font-size: 16px;
+        font-size: 20px;
         margin-top: 10px;
 
     }
@@ -243,13 +243,13 @@
     background-color: rgb(0, 99, 255);
   }
   .btnSubmit{
-    padding: 7px;
-    font-size: 15px;
+    padding: 9px;
+    font-size: 18px;
     color: white;
     font-family: 'Poppins';
     font-weight: 500;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     border-radius: 10px;
     background-color: rgb(0, 99, 255);
   }
@@ -267,8 +267,9 @@
     flex-direction: column;
     gap: 20px;
     input{
-        padding: 9px;
-        width: 210px;
+        padding: 11px;
+        width: 260px;
+        font-size: 16px;
         border-radius: 10px;
         margin-bottom: 20px;
         border: 1px solid gray;
@@ -283,7 +284,7 @@
   .problems{
     position: relative;
     bottom: 17px;
-    left:32px;
+    left:17px;
     color: gray;
     font-size: 14px;
   }
@@ -299,8 +300,8 @@
         height: 16px
     }
     .logoModal{
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
     }
     .info{
         display: flex;
@@ -317,7 +318,7 @@
         width: 250px;
         margin-top: 20px;
         .num{
-            font-size: 14px;
+            font-size: 16.5px;
             margin-top: 10px;
         }
     }
@@ -405,7 +406,7 @@
         bottom: 17px;
         left:1px;
         color: gray;
-        font-size: 12.5px;
+        font-size: 13.5px;
       }
      .btns{
         display: flex;
@@ -413,7 +414,17 @@
         width: 80%;
       }
       .callP{
-        font-size: 10px;
+        font-size: 14px;
       }
+      .btnSubmit{
+        padding: 9px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 500;
+        cursor: pointer;
+        width: 127px;
+      }
+
   }
   
