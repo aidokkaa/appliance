@@ -1,7 +1,5 @@
-import React from 'react'
 import './modal.css'
-import { FaPhoneAlt } from "react-icons/fa";
-import logo from '../../image/logolast.jpg'
+import logo from '../../images/logolast.jpg'
 import Comp3 from '../Comp3';
 const components = [
   <Comp3/>

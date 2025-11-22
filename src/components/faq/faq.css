@@ -52,6 +52,18 @@
     font-size: 20px;
     font-weight: bold;
 }
+.faqAnswer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 0; /* убираем отступы, когда закрыто */
+}
+
+.faqAnswer.open{
+  max-height: 500px; /* достаточно для текста */
+  padding: 15px 0; /* отступы при открытии */
+}
+
 @media (max-width: 740px){
     .h1{
         font-size: 27px;
