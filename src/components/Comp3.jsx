@@ -31,7 +31,7 @@ const Comp3 = () => {
       },
     );
     e.target.reset();
-    alert('Thank you! We will contact you within 15 minutes!')
+    alert('Thank you! We will contact you within 30 minutes!')
   }else{
     setErrText('Try again')
   }

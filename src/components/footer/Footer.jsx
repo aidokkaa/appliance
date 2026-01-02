@@ -1,40 +1,60 @@
-import React from 'react'
 import './footer.css';
-import { FaWhatsappSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { MdCopyright } from "react-icons/md";
+import { FaWhatsappSquare, FaInstagramSquare, FaFacebook } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className='footer'>
       <div className="footerInner">
         <div className="company">
-          <h3 className='footerH'>Smart Appliance Repair</h3>
-          <p>About Company</p>
-          <p>Services</p>
-          <p>Contacts</p>
+          <h3 className='footerH'>Ice Appliance Repair</h3>
+          <p>Same-day appliance repair</p>
+          <p>Licensed & insured technicians</p>
+          <p>Serving Chicago & surrounding areas</p>
         </div>
         <div className="contacts">
           <h3 className='footerH'>Contacts</h3>
-          <p>4617 North Lawndale Ave</p>
-          <p>Phone:+1 773 678 35 68</p>
-          <p>Email:smartappliance01@gmail.com</p>
+          <p>922 Davis Street</p>
+          <a href="tel:+17734618902" className="footerLink">
+            Phone: +1 (773) 461 89 02 
+          </a>
+          <a href="mailto:iceappusa@gmail.com" className="footerLink">
+           info@iceappus.com
+          </a>
         </div>
         <div className="social">
-          <span className='iconF'><FaWhatsappSquare/></span>
-          <span className='iconF'><FaInstagramSquare /></span>
-          <span className='iconF'><FaFacebook/></span>
-        </div>
-      </div>
-      <hr />
-      <div className="rights">
-    <span> 2024. </span>
-      <span>All rights reserved</span>
-      <a style={{textDecoration:"none"}} href="https://www.privacypolicies.com/live/21dde6a6-73bc-4d83-b956-72a9cfc8027b"><p>Privacy Policy</p></a>
+          <a
+            href="https://wa.me/15712748591"
+            target="_blank"
+            rel="noreferrer"
+            className='iconF'
+          >
+            <FaWhatsappSquare />
+          </a>
+          <a
+            href="#"
+            className='iconF'
+          >
+            <FaInstagramSquare />
+          </a>
 
+          <a
+            href="#"
+            className='iconF'
+          >
+            <FaFacebook />
+          </a>
+        </div>
+
+      </div>
+
+      <hr />
+
+      <div className="rights">
+        <span>© 2025.</span>
+        <span>All rights reserved</span>
       </div>
     </div>
+  );
+};
 
-  )
-}
-export default Footer
+export default Footer;

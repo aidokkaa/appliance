@@ -1,0 +1,130 @@
+.about-section {
+  background: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 60px 20px;
+}
+
+.h2Topic {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-text {
+  width: 45%;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Текст для адаптива */
+.about-text .short-text {
+  display: none; /* скрыт на десктопе */
+}
+
+.about-gallery {
+  width: 50%;
+}
+
+.photo-wrapper {
+  position: relative;
+}
+.top-photo {
+  position: relative;
+    width: 350px;
+  border-radius: 12px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.top-photo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bottom-photo {
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  transform: translate(-50%, 0);
+  width: 300px;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bottom-photo:hover {
+  transform: translate(-50%, 0) scale(1.05);
+}
+
+.third {
+  position: absolute;
+  top: -5%;
+  left: 55%;
+  transform: translate(-50%, 0);
+  width: 220px;
+  height: 180px;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.third:hover {
+  transform: translate(-50%, 0) scale(1.05);
+}
+
+/* ==========================
+   Адаптив для мобильных
+========================== */
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .about-gallery {
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .top-photo {
+    width: 200px;
+  }
+
+  .bottom-photo {
+    top: 15%;
+    left: 75%;
+    width: 160px;
+  }
+
+
+  .about-text .full-text {
+    display: none;
+  }
+
+  .about-text .short-text {
+    display: block;
+  }
+}

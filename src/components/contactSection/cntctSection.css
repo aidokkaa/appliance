@@ -1,0 +1,282 @@
+/* ==========================
+   Contact Section / CTA Block
+========================== */
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 65vh; /* компактнее, но не слишком низко */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* затемнение, текст читаемый */
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  gap: 40px;
+}
+
+/* ==========================
+   Левый текстовый блок
+========================== */
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards 0.3s;
+}
+
+.left h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.decor-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #ff9900, #ffb347);
+  margin: 10px 0;
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards 0.5s;
+}
+
+.left p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cta-subtext {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  margin-top: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards 0.7s;
+}
+
+/* ==========================
+   Правая кнопка
+========================== */
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards 1s;
+}
+.yellow{
+  background: linear-gradient(135deg, #ff9900, #ffb347);
+}
+.link{
+  text-decoration: none;
+}
+
+/* ==========================
+   Анимация появления
+========================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================
+   Адаптив
+========================== */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .left h2 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .left {
+    align-items: center;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .cta-subtext {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    height: 55vh;
+  }
+
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .cta-subtext {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+/* ===== MEDIA ===== */
+@media (max-width: 1024px) {
+  .container {
+    gap: 30px;
+  }
+
+  .left h2 {
+    font-size: 32px;
+  }
+
+  .left h3 {
+    font-size: 18px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .right form {
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 95%;       /* почти весь экран */
+    max-width: none;  /* убираем ограничения */
+    margin: 0 auto;
+  }
+
+  .left {
+    width: 100%;      /* левый блок занимает всю ширину */
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .right form {
+    width: 100%;      /* форма занимает всю ширину */
+    max-width: none;  /* убираем ограничения */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ==== Широкие поля на мобильных ==== */
+  .right form input,
+  .right form textarea,
+  .right form button {
+    width: 100%;      /* полностью растянуть */
+    max-width: none;
+    font-size: 15px;
+    padding: 14px 12px;
+    box-sizing: border-box; /* чтобы padding учитывался */
+  }
+
+  .right form textarea {
+    height: 120px;    /* чуть выше */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .left h3 {
+    font-size: 14px;
+  }
+
+  .left p {
+    font-size: 13px;
+  }
+
+  .right form input,
+  .right form textarea,
+  .right form button {
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+
+  .right form textarea {
+    height: 100px;
+  }
+}

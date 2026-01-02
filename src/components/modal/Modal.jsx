@@ -1,5 +1,5 @@
 import './modal.css'
-import logo from '../../images/logolast.jpg'
+import logo from '../../images/icelogo.jpg'
 import Comp3 from '../Comp3';
 const components = [
   <Comp3/>

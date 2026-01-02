@@ -1,52 +1,121 @@
-.footer{
-    width: 100%;
-    min-height: 200px;
-    padding: 20px 0 0;
-    background-color: #F2F0F0;
+.footer {
+  background-color: #0f172a; /* тёмно-синий / почти чёрный */
+  color: #e5e7eb;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
 }
-.footerInner{
-    display: flex;
-    font-size: 14.5px;
-    justify-content: space-around;
-    width: 70%;
-    margin: 40px auto;
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.footerH{
-    margin-bottom: 20px;
+
+/* ---------- HEADINGS ---------- */
+
+.footerH {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
-.iconF{
-    margin-right: 20px;
-    font-size: 25px;
-    cursor: pointer;
-    color: #20B2AA;
+
+/* ---------- COMPANY ---------- */
+
+.company p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #d1d5db;
 }
-.social{
-    display: flex;
+
+/* ---------- CONTACTS ---------- */
+
+.contacts p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.footerLink {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #38bdf8;
+}
+
+/* ---------- SOCIAL ---------- */
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconF {
+  font-size: 34px;
+  color: #d1d5db;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconF:hover {
+  transform: scale(1.15);
+  color: #38bdf8;
+}
+
+/* ---------- DIVIDER ---------- */
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 40px 0 20px;
+}
+
+/* ---------- RIGHTS ---------- */
+
+.rights {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.rights p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.rights p:hover {
+  color: #38bdf8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .footerInner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .social {
     justify-content: center;
-    align-items: center;
-}
-.rights{
-   font-size: 13px;
-   color: #3a3b3c;
-    width: 180px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-@media (max-width: 484px){
-.footerInner{
-  flex-direction: column;
-}
-.contacts{
-    margin-top: 20px;
-}
-.footerH{
-    margin-bottom: 15px;
-}
-.social{
-    margin-top: 20px;
-}
-.rights{
-    font-size: 12px;
-}
+  }
+
+  .rights {
+    flex-direction: column;
+    text-align: center;
+  }
 }

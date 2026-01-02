@@ -1,0 +1,138 @@
+.bookContainer {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.94),
+      rgba(255, 255, 255, 0.92)
+    ),
+    url(../../images/icelogo.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.bookFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap; /* чтобы на мобильных строки переносились */
+}
+.bookFeatures li {
+  font-size: 14.5px;
+  color: #0a2540;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: rgba(4, 58, 235, 0.06);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.bookFeatures li::before {
+  content: "✓";
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #0a2540, #0d315a);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ==============================
+   Button
+   ============================== */
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #0a2540, #0d315a); /* <-- здесь */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(4, 58, 235, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .h2Topic {
+    font-size: 32px;
+  }
+
+  .bookFeatures li {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  .bookBtn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 768px) {
+  .bookContainer {
+    padding: 30px 16px;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .h2Topic {
+    font-size: 28px;
+  }
+
+  .bookFeatures {
+    gap: 14px;
+  }
+
+  .bookFeatures li {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .bookBtn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* -------- SMALL MOBILE -------- */
+@media (max-width: 480px) {
+  .h2Topic {
+    font-size: 24px;
+  }
+
+  .bookFeatures li {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .bookBtn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+

@@ -1,67 +1,92 @@
-/* ====== Секция ====== */
+/* ================= SERVICES SECTION ================= */
+
 .services-section {
   padding: 60px 0;
   font-family: 'Arial', sans-serif;
 }
 
-/* Контейнер */
 .services-container {
-  width: 70%;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Заголовок */
-.services-header h2 {
-  font-size: 36px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
 .services-description {
   color: gray;
-  font-size: 18px;
   margin-bottom: 40px;
 }
 
+/* ================= GRID ================= */
 
-/* ====== Сетка карточек ====== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* пять в ряд */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 30px;
-  justify-items: center; /* по центру внутри ячеек */
+  justify-items: center;
 }
 
+/* ================= SERVICE ITEM ================= */
 
-/* ====== Обёртка карточки ====== */
 .service-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
+/* ================= CARD ================= */
+
 .service-card {
-  width: 170px;  
-  height: 140px; 
+  width: 170px;
+  height: 140px;
   border-radius: 20px;
   padding: 20px;
   background: #f9f9f9;
+
   display: flex;
   align-items: center;
   justify-content: center;
- transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover lift */
+.service-wrapper:hover .service-card {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(43, 125, 226, 0.18);
+}
+
+/* ================= ICON ================= */
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  line-height: 1;
+  color: #e38e8e;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* SVG styling */
 .service-icon svg {
-  stroke: #999999;
-  fill: none; 
   width: 80px;
   height: 100px;
-  transition: stroke 0.3s, transform 0.3s;
+  stroke: currentColor;
+  fill: none;
+  transition: transform 0.3s ease;
 }
+
+/* Icon hover */
+.service-wrapper:hover .service-icon {
+  color: #2B7DE2;
+  transform: scale(1.1);
+}
+
+/* ================= TITLE ================= */
+
 .service-title {
   margin-top: 12px;
   font-size: 18px;
@@ -69,16 +94,91 @@
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
-  transition:transform 0.3s;
-}
-.service-wrapper:hover .service-card .service-icon svg {
-  stroke: #2B7DE2;
-  transform: scale(1.1);
+
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Title hover */
 .service-wrapper:hover .service-title {
-    color: #1a3f8b;
-    font-weight: 600;
+  color: #1a3f8b;
+  font-weight: 600;
   transform: scale(1.1);
 }
 
+
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 150px;
+    height: 120px;
+    padding: 16px;
+  }
+
+  .service-icon svg {
+    width: 60px;
+    height: 80px;
+  }
+
+  .service-title {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 130px;
+    height: 110px;
+    padding: 12px;
+  }
+
+  .service-icon svg {
+    width: 50px;
+    height: 60px;
+  }
+
+  .service-title {
+    font-size: 14px;
+  }
+
+  .services-description {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .service-card {
+    width: 110px;
+    height: 90px;
+    padding: 10px;
+  }
+
+  .service-icon svg {
+    width: 40px;
+    height: 50px;
+  }
+
+  .service-title {
+    font-size: 12px;
+  }
+
+  .services-description {
+    font-size: 14px;
+  }
+}

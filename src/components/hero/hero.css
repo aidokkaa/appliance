@@ -1,0 +1,147 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+background-image: url("../../images//appl-hero.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* белый прозрачный overlay поверх картинки */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+background: rgba(255, 255, 255, 0.6);
+
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  text-align: center;
+  color: #111;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+   background: linear-gradient(135deg, #ff9900, #ffb347);
+  color: #fff;
+}
+
+.btn-primary:hover {
+   background: linear-gradient(135deg, #ff9900, #ffb347);
+  transform: translateY(-2px);
+  border: linear-gradient(135deg, #ff9900, #ffb347);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #ff9900, #ffb347);
+ border: linear-gradient(135deg, #ff9900, #ffb347);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+ background: linear-gradient(135deg, #ff9900, #ffb347);
+  color: #fff;
+  transform: translateY(-2px);
+  border: linear-gradient(135deg, #ff9900, #ffb347);
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 100px);
+    padding: 0 16px;
+  }
+
+  .hero-content {
+    padding: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-buttons {
+    gap: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* -------- SMALL MOBILE -------- */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .hero-overlay {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}

@@ -1,0 +1,233 @@
+/* ================= TOP BAR ================= */
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+ font-size: 15px;
+  background: linear-gradient(90deg, #0a2540, #0d315a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+}
+
+.header {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+
+  background: #fff;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(10, 37, 64, 0.18);
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2px 16px;
+}
+
+/* ================= LOGO ================= */
+
+.logoHeader {
+  width: 180px;
+  height: auto;
+}
+
+/* ================= NAV ================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu {
+  display: flex;
+  gap: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  cursor: pointer;
+
+  font-size: var(--text-regular);
+  font-weight: 500;
+  color: #0a2540;
+
+  position: relative;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+
+  background: linear-gradient(90deg, #ff9900, #ffb347);
+  transition: width 0.3s ease;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  padding: 10px 22px;
+  border-radius: 14px;
+  border: none;
+
+  font-size: var(--text-regular);
+  font-weight: 600;
+
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9900, #ffb347);
+  color: #0a2540;
+}
+
+.cta:hover {
+  box-shadow: 0 8px 22px rgba(255, 153, 0, 0.45);
+}
+
+/* ================= BURGER ================= */
+
+.burger {
+  display: none;
+}
+
+.burger img {
+  height: 26px;
+  color: red;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.mobileMenu a,
+.mobileMenu span {
+  color: white;
+  font-size: var(--h3-mobile);
+  cursor: pointer;
+}
+
+.mobileCTA {
+  margin-top: 16px;
+
+  padding: 14px 26px;
+  border-radius: 14px;
+  border: none;
+
+  font-size: var(--text-regular);
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #ff9900, #ffb347);
+  color: #0a2540;
+}
+
+/* ================= CLOSE ================= */
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* ================================================= */
+/* ================= MEDIA QUERIES ================= */
+/* ================================================= */
+
+/* -------- TABLET -------- */
+@media (max-width: 1024px) {
+  .logoHeader {
+    width: 155px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 768px) {
+  .topBar {
+    height: auto;
+    padding: 4px 10px;
+    text-align: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+  .burger img{
+    width: 40px;
+  }
+
+  .logoHeader {
+    width: 135px;
+  }
+
+  /* корректируем scroll offset для мобильных */
+  section {
+    scroll-margin-top: 120px;
+  }
+}
+
+/* -------- SMALL MOBILE -------- */
+@media (max-width: 480px) {
+  .logoHeader {
+    width: 120px;
+  }
+
+  .mobileMenu a,
+  .mobileMenu span {
+    font-size: 20px;
+  }
+
+  section {
+    scroll-margin-top: 130px;
+  }
+}

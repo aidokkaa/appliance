@@ -1,0 +1,97 @@
+.brands-section {
+  overflow: hidden;
+}
+
+.brands-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0 10px 0;
+}
+
+.brands-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.brands-marquee:hover .brands-track {
+  animation-play-state: paused;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+}
+
+.brand-item img {
+  max-height: 90px;
+  transition: 0.3s;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* две ленты 
+.brands-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.brands-track {
+  display: flex;
+  gap: 48px;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.marquee-left .brands-track {
+  animation: scroll-left 40s linear infinite;
+}
+
+.marquee-right .brands-track {
+  animation: scroll-right 40s linear infinite;
+}
+
+.brands-marquee:hover .brands-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.brand-item {
+  flex: 0 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-item img {
+  max-height: 60px; 
+  width: auto;       
+  object-fit: contain; 
+  filter: grayscale(100%);
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.brand-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+} */

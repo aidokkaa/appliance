@@ -1,107 +1,48 @@
 import React from "react";
+import refrig from '../../images/refrig (2).svg'
+import washmash from '../../images/washmash.svg'
+import microw from '../../images/microwave.svg'
+import dish from '../../images/dishwash.svg'
+import freezer from '../../images/freezer.svg'
+import ice from '../../images/ice (2).svg'
+import dry from '../../images/dry.svg'
+import disposal from '../../images/disposal.svg'
+import drawer from '../../images/drawer.svg'
+import range from '../../images/range.svg'
+import cooktop from '../../images/cooktop.svg'
+import oven from '../../images/oven.svg'
+import vent from '../../images/vent.svg'
 import "./Services.css";
+import { useNavigate } from "react-router-dom";
+import { forwardRef } from "react";
 
 const servicesData = [
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-      <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-      <rect x="6" y="9" width="8" height="6" fill="white"></rect>
-      <circle cx="17" cy="12" r="1" fill="white"></circle>
-      <circle cx="17" cy="15" r="1" fill="white"></circle>
-    </svg>
-, title: "Refrigerators" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="4" y="3" width="16" height="18" rx="2"></rect>
-  <circle cx="12" cy="12" r="5" fill="white"></circle>
-  <circle cx="12" cy="12" r="1" fill="white"></circle>
-</svg>
-, title: "Washing Machines" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="4" y="3" width="16" height="18" rx="2"></rect>
-  <rect x="7" y="8" width="10" height="2" fill="white"></rect>
-  <circle cx="9" cy="15" r="1" fill="white"></circle>
-  <circle cx="12" cy="15" r="1" fill="white"></circle>
-  <circle cx="15" cy="15" r="1" fill="white"></circle>
-</svg>
-, title: "Dishwashers" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-  <rect x="6" y="9" width="12" height="6" fill="white"></rect>
-</svg>
-, title: "Microwaves" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-    <rect x="4" y="3" width="16" height="18" rx="2"></rect>
-    <circle cx="12" cy="12" r="5" fill="white"></circle>
-    <circle cx="12" cy="12" r="1" fill="white"></circle>
-    <rect x="6" y="16" width="12" height="2" fill="white"></rect>
-  </svg>, title: "Dryers" },
-  { icon: <svg viewBox="0 0 24 24" fill="none" stroke="#999999" strokeWidth="1">
-  {/* Основные линии снежинки */}
-  <line x1="12" y1="5" x2="12" y2="19"></line>
-  <line x1="5" y1="12" x2="19" y2="12"></line>
-  <line x1="7" y1="7" x2="17" y2="17"></line>
-  <line x1="7" y1="17" x2="17" y2="7"></line>
-
-  {/* Веточки снежинки */}
-  <line x1="12" y1="5" x2="10" y2="7"></line>
-  <line x1="12" y1="5" x2="14" y2="7"></line>
-  <line x1="12" y1="19" x2="10" y2="17"></line>
-  <line x1="12" y1="19" x2="14" y2="17"></line>
-
-  <line x1="5" y1="12" x2="7" y2="10"></line>
-  <line x1="5" y1="12" x2="7" y2="14"></line>
-  <line x1="19" y1="12" x2="17" y2="10"></line>
-  <line x1="19" y1="12" x2="17" y2="14"></line>
-</svg>
-
-
-, title: "Ice Machines" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-  <rect x="6" y="9" width="12" height="6" fill="white"></rect>
-  <circle cx="9" cy="16" r="1" fill="white"></circle>
-  <circle cx="15" cy="16" r="1" fill="white"></circle>
-</svg>
-, title: "Ovens" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-  <circle cx="8" cy="10" r="1" fill="white"></circle>
-  <circle cx="16" cy="10" r="1" fill="white"></circle>
-  <circle cx="8" cy="14" r="1" fill="white"></circle>
-  <circle cx="16" cy="14" r="1" fill="white"></circle>
-</svg>
-, title: "Cooktops" },
-  { icon: "💨", title: "Vent Hoods" },
-  { icon: "🔥", title: "Stoves / Ranges" },
-  { icon: "♨️", title: "Warmer Drawers" },
-  { icon:  <svg viewBox="0 0 24 24" fill="currentColor">
-      <rect x="5" y="6" width="14" height="12" rx="2"></rect>
-      <circle cx="12" cy="12" r="3" fill="white"></circle>
-    </svg>, title: "Garbage Disposals" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-  <rect x="6" y="8" width="12" height="8" fill="white"></rect>
-  <circle cx="17" cy="11" r="1" fill="white"></circle>
-  <circle cx="17" cy="14" r="1" fill="white"></circle>
-</svg>
-, title: "Freezers" },
-  { icon: "❄️", title: "Range" },
-  { icon: <svg viewBox="0 0 24 24" fill="currentColor">
-  <rect x="4" y="5" width="16" height="14" rx="2"></rect>
-  <rect x="7" y="8" width="10" height="8" fill="white"></rect>
-  <circle cx="17" cy="12" r="1" fill="white"></circle>
-  <circle cx="17" cy="15" r="1" fill="white"></circle>
-</svg>
-
-, title: "Wine Coolers" },
+  { icon: refrig, title: "Refrigerators" },
+  { icon:washmash, title: "Washing Machines" },
+  { icon: dish, title: "Dishwashers" },
+  { icon: microw, title: "Microwaves" },
+  { icon: dry, title: "Dryers" },
+  { icon: ice, title: "Ice Machines" },
+  { icon: oven, title: "Ovens" },
+  { icon:cooktop, title: "Cooktops" },
+  { icon: vent, title: "Vent Hoods" },
+  { icon: range, title: "Stoves / Ranges" },
+  { icon: drawer, title: "Warmer Drawers" },
+  { icon: disposal, title: "Garbage Disposals" },
+  { icon: freezer, title: "Freezers" }
 ];
 
-const Services = () => {
+const Services = forwardRef((props, ref) => {
+  const navigate = useNavigate()
+  const navToRequest=()=>{
+    
+    navigate('/requestPage')
+  }
   return (
-    <section className="services-section">
-      <div className="services-container">
-
+    <section ref={ref} className="services-section paddingofblocks">
+      <div className="services-container width">
         <div className="services-header">
-          <h2>Our Services</h2>
+          <h2 className="h2Topic">Our Services Include:</h2>
           <p className="services-description">
             We repair all major household appliances fast and professionally.
           </p>
@@ -109,18 +50,36 @@ const Services = () => {
 
         <div className="services-grid">
           {servicesData.map((service, index) => (
-        <div className="service-wrapper">
-  <div className="service-card">
-    <div className="service-icon">{service.icon}</div>
+        <div key={index} className="service-wrapper">
+  <div onClick={()=>
+       navigate('/requestPage', {
+          state: { serviceTitle: service.title }
+        })
+  } className="service-card">
+    <img className="service-icon" src={service.icon} alt="" />
   </div>
   <div className="service-title">{service.title}</div>
 </div>
+
 
           ))}
         </div>
       </div>
     </section>
   );
-};
+});
 
 export default Services;
+
+
+
+// ⭐ Вариант 4 (коротко, современно)
+
+// Book Your Appliance Repair
+// Speed. Skill. Straightforward pricing. Get your appliance back on track today.
+
+// Book Now
+// ✔ Same-Day Service Options
+// ✔ Certified Repair Experts
+// ✔ Transparent Pricing
+// ✔ Warranty Included
