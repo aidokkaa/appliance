@@ -120,9 +120,9 @@ const prevSlide = () => {
 
         <button className="arrow right" onClick={nextSlide}>›</button>
       </div>
- <div className="btnReviews">
+ {/* <div className="btnReviews">
   <button className="btn">See all reviews</button>
-</div>
+</div> */}
 
     </section>
   );

@@ -1,11 +1,11 @@
 import './aboutus.css';
 import { forwardRef } from "react";
-import photoAppliance from '../../images/photoapplin1.jpg'
-import photoErik from '../../images/photoErik1.jpg';
+import photoAppliance from '../../images/erikice1.jpeg'
+import photoErik from '../../images/erikice2.jpeg';
 
 const AboutUs = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="about-section paddingofblocks">
+    <section ref={ref} className="about-section paddingofblocks ">
       <h2 className='h2Topic'>About Us</h2>
       <div className="about-inner width">
         <div className="about-flex">

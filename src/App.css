@@ -5,7 +5,7 @@
 }
 
 .appContent {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .paddingofblocks{
     padding: 60px 0;
@@ -25,4 +25,12 @@ h2{
 }
 section {
   scroll-margin-top: 100px;
+}
+@media (max-width: 768px){
+  .appContent {
+  margin-top: 80px;
+}
+.paddingofblocks{
+    padding: 40px 0;
+}
 }

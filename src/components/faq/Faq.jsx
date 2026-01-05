@@ -38,7 +38,7 @@ const Faq = forwardRef((props, ref) => {
     <>
       <FaqSchema faqs={faqs} />
       <section ref={ref} className="mCont">
-        <h1 className="h2Topic">Appliance Repair – Frequently Asked Questions</h1>
+        <h1 className="h2Topic">Frequently Asked Questions</h1>
 
         <div className="faqCont">
           {faqs.map((item, index) => (

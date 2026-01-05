@@ -81,7 +81,7 @@
   }
 
   .qText {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .pText {
@@ -95,7 +95,7 @@
 
 @media (max-width: 484px) {
   .mCont {
-    width: 85%;
+    width: 90%;
     min-height: 50vh;
   }
 }
