@@ -32,8 +32,6 @@ export default function RequestPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // ✅ Проверка обязательных полей
     if (!form.firstName || !form.address || !form.zipCode || !form.phoneNumber) {
       alert("Please fill required fields");
       return;
@@ -43,8 +41,8 @@ export default function RequestPage() {
 
     emailjs
       .sendForm(
-        "service_5isfl8b",     // ваш Service ID
-        "template_1eihquu",    // ваш Template ID
+        "service_5isfl8b",    
+        "template_1eihquu",    
         formRef.current,
         { publicKey: "JJsLQIXT5guokDKSf" }
         

@@ -1,5 +1,3 @@
-/* ================= TOP BAR ================= */
-
 .topBar {
   position: fixed;
   top: 0;
@@ -168,11 +166,6 @@
   cursor: pointer;
 }
 
-/* ================================================= */
-/* ================= MEDIA QUERIES ================= */
-/* ================================================= */
-
-/* -------- TABLET -------- */
 @media (max-width: 1024px) {
   .logoHeader {
     width: 155px;
@@ -203,23 +196,21 @@
     display: block;
   }
   .burger img{
-    width: 40px;
+    width: 50px;
+    margin-top: 10px;
   }
 
   .logoHeader {
-    width: 135px;
+    width: 150px;
   }
-
-  /* корректируем scroll offset для мобильных */
   section {
     scroll-margin-top: 120px;
   }
 }
 
-/* -------- SMALL MOBILE -------- */
 @media (max-width: 480px) {
   .logoHeader {
-    width: 120px;
+    width: 130px;
   }
 
   .mobileMenu a,

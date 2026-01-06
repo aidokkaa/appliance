@@ -10,6 +10,7 @@ const ContactSection = () => {
         autoPlay
         muted
         loop
+        playsInline
       ></video>
 
       {/* Альфа overlay */}

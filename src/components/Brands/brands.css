@@ -16,10 +16,6 @@
   animation: scroll 40s linear infinite;
 }
 
-.brands-marquee:hover .brands-track {
-  animation-play-state: paused;
-}
-
 .brand-item {
   flex: 0 0 auto;
 }

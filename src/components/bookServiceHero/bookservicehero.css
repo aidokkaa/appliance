@@ -52,14 +52,10 @@
   font-weight: 700;
 }
 
-/* ==============================
-   Button
-   ============================== */
-
 .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: linear-gradient(90deg, #0a2540, #0d315a); /* <-- здесь */
+  background: linear-gradient(90deg, #0a2540, #0d315a); 
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -75,9 +71,6 @@
 }
 
 @media (max-width: 1024px) {
-  .h2Topic {
-    font-size: 32px;
-  }
 
   .bookFeatures li {
     font-size: 15px;
@@ -90,16 +83,13 @@
   }
 }
 
-/* -------- MOBILE -------- */
 @media (max-width: 768px) {
   .bookContainer {
     padding: 30px 16px;
     gap: 20px;
     min-height: auto;
-  }
-
-  .h2Topic {
-    font-size: 28px;
+    background-attachment: scroll;
+    background-size: contain;
   }
 
   .bookFeatures {

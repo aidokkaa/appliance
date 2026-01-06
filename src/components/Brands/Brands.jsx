@@ -20,27 +20,38 @@ import thermador from '../../images/brands/thermador.png'
 import kitchenaid from '../../images/brands/kitchenaid.jpg'
 import haier from '../../images/brands/haier.jpg'
 import maxx from '../../images/brands/maxx.avif'
-
+import bertazzoni from '../../images/brands/bertazzoni.jpg'
 
 const Brands = () => {
   const brands = [
-    { name: "Admiral", src: admiral },
+    { name: "Sub-Zero", src: subzero },
+    { name: "Bertazzoni", src: bertazzoni },
+    { name: "Samsung", src: samsung },
+    { name: "Sub-Zero", src: subzero },
     { name: "Whirlpool", src: whirlpool },
+    { name: "Sub-Zero", src: subzero },
     { name: "Amana", src: amana },
     { name: "Thor", src: thor },
     { name: "Asko", src: asko },
+    { name: "Samsung", src: samsung },
+    { name: "Sub-Zero", src: subzero },
     { name: "Blomberg", src: blomberg },
     { name: "Samsung", src: samsung },
     { name: "LG", src: lg },
+    { name: "Sub-Zero", src: subzero },
     { name: "Maytag", src: maytag },
+    { name: "Samsung", src: samsung },
     { name: "Bosch", src: bosch },
     { name: "Frigidaire", src: frigidaire },
     { name: "GE", src: ge },
+    { name: "Sub-Zero", src: subzero },
     { name: "Electrolux", src: electrolux },
     { name: "Miele", src: miele },
+    { name: "Samsung", src: samsung },
     { name: "Viking", src: viking },
     { name: "Sub-Zero", src: subzero },
     { name: "Thermador", src: thermador },
+    { name: "Sub-Zero", src: subzero },
     { name: "KitchenAid", src: kitchenaid },
     { name: "Haier", src: haier },
     { name: "Maxx", src: maxx }

@@ -1,7 +1,7 @@
 import './aboutus.css';
 import { forwardRef } from "react";
-import photoAppliance from '../../images/erikice1.jpeg'
-import photoErik from '../../images/erikice2.jpeg';
+import photoAppliance from '../../images/erikoven.jpeg'
+import photoErik from '../../images/refri.jpeg';
 
 const AboutUs = forwardRef((props, ref) => {
   return (

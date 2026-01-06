@@ -51,10 +51,10 @@ function App() {
             <>
               <Hero></Hero>
               <BookServiceHero />
-              <CompanyStats />
-              <AboutUs ref={aboutRef} />
               <Brands></Brands>
               <Services ref={serviceRef} />
+              <CompanyStats />
+              <AboutUs ref={aboutRef} />
               <Reviews ref={reviewRef} />
               <Faq ref={faqRef} />
               <ContactSection></ContactSection>
