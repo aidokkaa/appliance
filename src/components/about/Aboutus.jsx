@@ -9,15 +9,12 @@ const AboutUs = forwardRef((props, ref) => {
       <h2 className='h2Topic'>About Us</h2>
       <div className="about-inner width">
         <div className="about-flex">
-          {/* Фотографии */}
           <div className="about-gallery">
             <div className="photo-wrapper">
               <img className="top-photo" src={photoErik} alt="Technician working" />
               <img className="bottom-photo" src={photoAppliance} alt="Appliance repair" />
             </div>
           </div>
-
-          {/* Текст */}
           <div className="about-text">
             <p className="full-text">
               We are a professional home appliance repair service specializing in refrigerators, freezers, ovens, and other major household appliances.
