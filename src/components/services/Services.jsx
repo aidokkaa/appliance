@@ -1,4 +1,3 @@
-import React from "react";
 import refrig from '../../images/refrig (2).svg'
 import washmash from '../../images/washmash.svg'
 import microw from '../../images/microwave.svg'
@@ -34,10 +33,6 @@ const servicesData = [
 
 const Services = forwardRef((props, ref) => {
   const navigate = useNavigate()
-  const navToRequest=()=>{
-    
-    navigate('/requestPage')
-  }
   return (
     <section ref={ref} className="services-section paddingofblocks">
       <div className="services-container width">
@@ -61,7 +56,6 @@ const Services = forwardRef((props, ref) => {
   <div className="service-title">{service.title}</div>
 </div>
 
-
           ))}
         </div>
       </div>
@@ -70,16 +64,3 @@ const Services = forwardRef((props, ref) => {
 });
 
 export default Services;
-
-
-
-// ⭐ Вариант 4 (коротко, современно)
-
-// Book Your Appliance Repair
-// Speed. Skill. Straightforward pricing. Get your appliance back on track today.
-
-// Book Now
-// ✔ Same-Day Service Options
-// ✔ Certified Repair Experts
-// ✔ Transparent Pricing
-// ✔ Warranty Included

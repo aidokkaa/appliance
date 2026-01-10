@@ -4,6 +4,22 @@ import { useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { problemsByService } from "../data/problemsByService";
 import Header from "../components/header/Header";
+const applianceOptions = [
+  "Refrigerators",
+  "Washing Machines",
+  "Dishwashers",
+  "Microwaves",
+  "Dryers",
+  "Ice Machines",
+  "Ovens",
+  "Cooktops",
+  "Vent Hoods",
+  "Stoves / Ranges",
+  "Warmer Drawers",
+  "Garbage Disposals",
+  "Freezers",
+];
+
 
 export default function RequestPage() {
   const location = useLocation();
@@ -133,16 +149,36 @@ export default function RequestPage() {
               </div>
             </div>
 
-            {/* Appliance */}
-            <div className="req-field">
-              <label>Appliance Type</label>
-              <input
-                name="appliance"
-                value={form.appliance}
-                readOnly
-                className="req-appliance"
-              />
-            </div>
+     {/* Appliance */}
+<div className="req-field">
+  <label>Appliance Type</label>
+
+  {selectedService ? (
+  <input
+  name="appliance"
+  value={form.appliance}
+  readOnly
+  placeholder="Selected from services"
+  className="req-appliance req-appliance--locked"
+/>
+
+  ) : (
+    <select
+      name="appliance"
+      value={form.appliance}
+      onChange={handleChange}
+      required
+    >
+      <option value="">Select appliance</option>
+      {applianceOptions.map((item) => (
+        <option key={item} value={item}>
+          {item}
+        </option>
+      ))}
+    </select>
+  )}
+</div>
+
 
             {/* Problem list */}
             {problemsList.length > 0 && (

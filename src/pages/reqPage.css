@@ -138,7 +138,17 @@
   margin-top: 4px;
 }
 
-/* ================= MEDIA QUERIES ================= */
+.req-appliance--locked {
+  background-color: #f5f6f8;
+  color: #555;
+  cursor: not-allowed;
+  border: 1px solid #dcdfe4;
+}
+
+.req-appliance--locked::placeholder {
+  color: #9aa0a6;
+}
+
 
 /* Small devices (phones, max-width 600px) */
 @media (max-width: 600px) {
