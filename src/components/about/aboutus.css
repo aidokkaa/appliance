@@ -106,6 +106,7 @@
 }
 @media (max-width: 480px){
   .short-text{
-    font-size: 14px;
+    font-size: 15px;
+    width: 100%;
   }
 }

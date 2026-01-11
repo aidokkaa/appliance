@@ -1,58 +1,60 @@
-
+/* ================= Brands Section ================= */
 
 .brands-section {
+  width: 100%;
   overflow: hidden;
-  min-height: 120px; 
+  min-height: 120px;
 }
 
-
+/* Контейнер marquee */
 .brands-marquee {
   width: 100%;
   overflow: hidden;
   padding: 60px 0 10px;
 
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  /* iOS Safari repaint fix */
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-
-
+/* Лента с логотипами */
 .brands-track {
-  display: flex;
+  display: inline-flex;              /* КРИТИЧНО для iOS */
   align-items: center;
   gap: 48px;
-  width: max-content;
 
   animation: scroll 40s linear infinite;
-
+  animation-delay: 0.01s;             /* iOS trigger */
 
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-
+/* Один бренд */
 .brand-item {
   flex: 0 0 auto;
 }
 
+/* Логотип */
 .brand-item img {
-  max-height: 90px;
-  transition: 0.3s;
+  height: 90px;                       /* фиксируем размер */
+  width: auto;
+  display: block;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-
-
+/* Анимация */
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
-
-
 @media (max-width: 768px) {
   .brands-section {
     min-height: 100px;
@@ -63,6 +65,6 @@
   }
 
   .brand-item img {
-    max-height: 80px;
+    height: 80px;
   }
 }

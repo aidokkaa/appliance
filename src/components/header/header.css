@@ -196,12 +196,18 @@
   section {
     scroll-margin-top: 120px;
   }
+  .header {
+  top: 27px;
+}
 }
 
 @media (max-width: 480px) {
   .logoHeader {
     width: 130px;
   }
+    .header {
+  top: 26px;
+}
 
   .mobileMenu a,
   .mobileMenu span {

@@ -216,13 +216,18 @@
   }
 
   .req-title {
-    font-size: 21px;
+    font-size: 22px;
   }
 
   .req-sub {
-    font-size: 12px;
+    font-size: 14px;
   }
-
+  .req-submit{
+    font-size: 14px;
+  }
+ .req-field label{
+  font-size: 14px;
+ }
   .req-field input,
   .req-field textarea,
   .req-field select {
