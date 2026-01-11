@@ -24,12 +24,12 @@ const applianceOptions = [
 export default function RequestPage() {
   const location = useLocation();
   const formRef = useRef();
+  const statusRef = useRef(null); // <-- ref на сообщение
 
   const selectedService = location.state?.serviceTitle || "";
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); 
-
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const [form, setForm] = useState({
     firstName: "",
@@ -55,12 +55,17 @@ export default function RequestPage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setForm((prev) => ({
       ...prev,
       [name]: value,
       ...(name === "appliance" ? { problems: "" } : {}),
     }));
+  };
+
+  const scrollToStatus = () => {
+    if (statusRef.current) {
+      statusRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   };
 
   const handleSubmit = (e) => {
@@ -69,6 +74,7 @@ export default function RequestPage() {
 
     if (!form.firstName || !form.address || !form.zipCode || !form.phoneNumber) {
       setSubmitStatus("required");
+      setTimeout(scrollToStatus, 50); // прокрутка к сообщению
       return;
     }
 
@@ -94,10 +100,13 @@ export default function RequestPage() {
           problems: "",
           details: "",
         });
+
+        setTimeout(scrollToStatus, 50); // прокрутка к сообщению
       })
       .catch(() => {
         setSubmitStatus("error");
         setIsSubmitting(false);
+        setTimeout(scrollToStatus, 50); // прокрутка к сообщению
       });
   };
 
@@ -115,19 +124,19 @@ export default function RequestPage() {
 
             {/* STATUS MESSAGES */}
             {submitStatus === "success" && (
-              <div className="req-msg req-msg--success">
+              <div ref={statusRef} className="req-msg req-msg--success">
                 Thank you! We will contact you within 30 minutes.
               </div>
             )}
 
             {submitStatus === "error" && (
-              <div className="req-msg req-msg--error">
+              <div ref={statusRef} className="req-msg req-msg--error">
                 Something went wrong. Please try again.
               </div>
             )}
 
             {submitStatus === "required" && (
-              <div className="req-msg req-msg--warning">
+              <div ref={statusRef} className="req-msg req-msg--warning">
                 Please fill all required fields.
               </div>
             )}
