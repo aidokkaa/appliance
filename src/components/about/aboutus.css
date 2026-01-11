@@ -1,6 +1,5 @@
 .about-section {
   background: #fff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 .about-flex {
@@ -18,9 +17,8 @@
   align-items: flex-start;
 }
 
-/* Текст для адаптива */
 .about-text .short-text {
-  display: none; /* скрыт на десктопе */
+  display: none; 
 }
 
 .about-gallery {
@@ -60,9 +58,6 @@
   transform: translate(-50%, 0) scale(1.05);
 }
 
-/* ==========================
-   Адаптив для мобильных
-========================== */
 @media (max-width: 768px) {
   .about-section{
     width: 90%;

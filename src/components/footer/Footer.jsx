@@ -23,14 +23,6 @@ const Footer = () => {
         </div>
         <div className="social">
           <a
-            href="https://wa.me/15712748591"
-            target="_blank"
-            rel="noreferrer"
-            className='iconF'
-          >
-            <FaWhatsappSquare />
-          </a>
-          <a
             href="#"
             className='iconF'
           >

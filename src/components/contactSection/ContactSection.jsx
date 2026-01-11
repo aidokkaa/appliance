@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 const ContactSection = () => {
   return (
     <section className="contact-section">
-      {/* Видео фон */}
       <video
         className="bg-video"
         src="/videos/oven.mp4"
@@ -12,11 +11,7 @@ const ContactSection = () => {
         loop
         playsInline
       ></video>
-
-      {/* Альфа overlay */}
       <div className="overlay"></div>
-
-      {/* Контент */}
       <div className="container">
         <div className="left">
           <h2>Need your appliance repaired?</h2>

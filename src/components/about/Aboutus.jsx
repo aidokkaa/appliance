@@ -5,7 +5,7 @@ import photoErik from '../../images/refri.jpeg';
 
 const AboutUs = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="about-section paddingofblocks ">
+    <section ref={ref} className="about-section paddingofblocks width ">
       <h2 className='h2Topic'>About Us</h2>
       <div className="about-inner width">
         <div className="about-flex">

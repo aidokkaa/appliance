@@ -10,12 +10,12 @@ const reviews = [
 }
 ,
   { name: "Davi Davenport", text: `Two thumbs up and five stars across the board! Thank you again, you’ve definitely earned my business.`, date: "8 month ago" },
-  { name: "Karen Levin", text: `I will continue to use Smart Appliance Repair for all my appliance repair needs and highly recommend them. Very reasonably priced, too!`, date: "2 month ago" },
+  { name: "Karen Levin", text: `I will continue to use ICE Appliance Repair for all my appliance repair needs and highly recommend them. Very reasonably priced, too!`, date: "2 month ago" },
   { name: "Michael D.", text: "Great experience from start to finish.", date: "May 2025" },
   { name: "Tania Ramirez", text: `The team is very professional, knowledgeable and so easy to work with. They solved my washer/ dryer problem with ease. Their pricing is very fair too!`, date: "1 month ago" },
   { name: "Vanessa Smith", text: `They were fast, courteous, explained everything clearly and cleaned up after themselves. Would highly recommend!`, date: "1 month ago" },
   { name: "Linda W.", text: "Technician was friendly and professional.", date: "February 2025" },
-  { name: "Tom Brady.", text: `I’ve used Smart Appliance Repair for all my older Sub-Zero repairs. They’ve done great work, quickly and on budget. I highly recommend them…`, date: "6 month ago" },
+  { name: "Tom Brady.", text: `I’ve used ICE Appliance Repair for all my older Sub-Zero repairs. They’ve done great work, quickly and on budget. I highly recommend them…`, date: "6 month ago" },
 ];
 
 const Reviews = forwardRef((props, ref)=> {
@@ -52,7 +52,6 @@ const prevSlide = () => {
 };
   return (
     <section ref={ref} className="reviews-section">
-      {/* <h2 className="reviews-title h2Topic">Customer Reviews</h2> */}
 <div className="google-rating-block">
   <div className="google-rating-card">
     <div className="rating-main">
@@ -120,9 +119,6 @@ const prevSlide = () => {
 
         <button className="arrow right" onClick={nextSlide}>›</button>
       </div>
- {/* <div className="btnReviews">
-  <button className="btn">See all reviews</button>
-</div> */}
 
     </section>
   );

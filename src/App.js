@@ -4,7 +4,6 @@ import './App.css';
 import Header from '../src/components/header/Header'
 import Hero from './components/hero/Hero';
 import Services from './components/services/Services';
-import Modal from './components/modal/Modal';
 import Faq from './components/faq/Faq';
 import Footer from './components/footer/Footer';
 import BookServiceHero from './components/bookServiceHero/BookServiceHero';
@@ -15,6 +14,9 @@ import RequestPage from './pages/RequestPage';
 import Brands from './components/Brands/Brands';
 import ContactSection from './components/contactSection/ContactSection';
 import CallButton from './components/callButton/CallButton';
+import NotFound from './components/NotFound';
+import ScrollToTop from './components/ScrollTop';
+import ScrollUpButton from './components/ScrollUpButton';
 
 function App() {
   const aboutRef = useRef(null);
@@ -44,8 +46,9 @@ function App() {
         scrolled={scrolled} 
       />
       <CallButton></CallButton>
-      {/* {open && <Modal open={open} setOpen={setOpen} />} */}
       <main className='appContent'>
+        <ScrollToTop></ScrollToTop>
+        <ScrollUpButton></ScrollUpButton>
         <Routes>
           <Route path="/" element={
             <>
@@ -62,6 +65,7 @@ function App() {
             </>
           } />
           <Route path="/requestPage" element={<RequestPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

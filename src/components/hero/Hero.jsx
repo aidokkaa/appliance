@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="hero">
-      {/* белый полупрозрачный overlay */}
       <div className="hero-overlay"></div>
 
       <div className="hero-content">

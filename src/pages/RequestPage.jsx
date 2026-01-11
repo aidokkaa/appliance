@@ -29,7 +29,7 @@ export default function RequestPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); 
-  // null | "success" | "error" | "required"
+
 
   const [form, setForm] = useState({
     firstName: "",

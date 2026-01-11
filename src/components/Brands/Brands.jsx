@@ -77,7 +77,6 @@ const Brands = () => {
 
   return (
  <section className="brands-section paddingofblocks">
-  {/* <h2 className='h2Topic'>Brands We Service</h2> */}
       <div className="brands-marquee">
         <div className="brands-track">
           {[...brands, ...brands].map((brand, index) => (

@@ -37,14 +37,12 @@
   padding: 2px 16px;
 }
 
-/* ================= LOGO ================= */
 
 .logoHeader {
   width: 180px;
   height: auto;
 }
 
-/* ================= NAV ================= */
 
 .nav {
   display: flex;
@@ -86,7 +84,6 @@
   width: 100%;
 }
 
-/* ================= CTA ================= */
 
 .cta {
   padding: 10px 22px;
@@ -105,7 +102,6 @@
   box-shadow: 0 8px 22px rgba(255, 153, 0, 0.45);
 }
 
-/* ================= BURGER ================= */
 
 .burger {
   display: none;
@@ -113,10 +109,8 @@
 
 .burger img {
   height: 26px;
-  color: red;
 }
 
-/* ================= MOBILE MENU ================= */
 
 .mobileMenu {
   position: fixed;
@@ -154,8 +148,6 @@
   color: #0a2540;
 }
 
-/* ================= CLOSE ================= */
-
 .close {
   position: absolute;
   top: 24px;
@@ -180,7 +172,6 @@
   }
 }
 
-/* -------- MOBILE -------- */
 @media (max-width: 768px) {
   .topBar {
     height: auto;

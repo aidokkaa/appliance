@@ -15,9 +15,9 @@ export default function CallButton() {
   height="28"
   fill="none"
   stroke="white"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
 >
   <path d="M22 16.92v3a2 2 0 0 1-2.18 2
            19.86 19.86 0 0 1-8.63-3.07
