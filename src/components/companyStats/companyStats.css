@@ -94,3 +94,8 @@ width: 90%;
     height: 26px;
   }
 }
+@media (max-width: 480px){
+  .stat-label{
+    font-size: 14px;
+  }
+}

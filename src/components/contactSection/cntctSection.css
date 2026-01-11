@@ -248,6 +248,9 @@
   }
 
   .left p {
+    font-size: 14px;
+  }
+  .cta-subtext{
     font-size: 13px;
   }
 

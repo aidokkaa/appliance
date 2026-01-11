@@ -104,3 +104,8 @@
     margin-top:23px ;
   }
 }
+@media (max-width: 480px){
+  .short-text{
+    font-size: 14px;
+  }
+}
