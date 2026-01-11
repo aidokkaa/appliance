@@ -1,5 +1,5 @@
 .footer {
-  background-color: #0f172a; /* тёмно-синий / почти чёрный */
+  background-color: #0f172a; 
   color: #e5e7eb;
   padding: 50px 20px 20px;
   font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-/* ---------- HEADINGS ---------- */
+
 
 .footerH {
   font-size: 20px;
@@ -22,7 +22,7 @@
   color: #ffffff;
 }
 
-/* ---------- COMPANY ---------- */
+
 
 .company p {
   margin: 6px 0;
@@ -30,7 +30,7 @@
   color: #d1d5db;
 }
 
-/* ---------- CONTACTS ---------- */
+
 
 .contacts p {
   margin: 6px 0;
@@ -50,7 +50,7 @@
   color: #38bdf8;
 }
 
-/* ---------- SOCIAL ---------- */
+
 
 .social {
   display: flex;
@@ -70,7 +70,7 @@
   color: #38bdf8;
 }
 
-/* ---------- DIVIDER ---------- */
+
 
 .footer hr {
   border: none;
@@ -78,7 +78,7 @@
   margin: 40px 0 20px;
 }
 
-/* ---------- RIGHTS ---------- */
+
 
 .rights {
   max-width: 1200px;
@@ -101,7 +101,6 @@
   color: #38bdf8;
 }
 
-/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
   .footerInner {

@@ -202,8 +202,6 @@
 }
 
 
-
-/* ===== TABLET (до 1024px) ===== */
 @media (max-width: 1024px) {
   .review-card {
     flex: 0 0 30%;
@@ -219,7 +217,6 @@
 }
 
 
-/* ===== SMALL TABLET (до 768px) ===== */
 @media (max-width: 768px) {
   .carousel-container {
     gap: 8px;
@@ -247,7 +244,6 @@
 }
 
 
-/* ===== MOBILE (до 480px) ===== */
 @media (max-width: 480px) {
   .reviews-section {
     width: 100%;

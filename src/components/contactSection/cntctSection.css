@@ -1,15 +1,12 @@
-/* ==========================
-   Contact Section / CTA Block
-========================== */
+
 .contact-section {
   position: relative;
   width: 100%;
-  height: 65vh; /* компактнее, но не слишком низко */
+  height: 65vh; 
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 .bg-video {
@@ -29,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45); /* затемнение, текст читаемый */
+  background: rgba(0, 0, 0, 0.45); 
   z-index: 0;
 }
 
@@ -44,9 +41,7 @@
   gap: 40px;
 }
 
-/* ==========================
-   Левый текстовый блок
-========================== */
+
 .left {
   display: flex;
   flex-direction: column;
@@ -88,9 +83,6 @@
   animation: fadeInUp 0.8s forwards 0.7s;
 }
 
-/* ==========================
-   Правая кнопка
-========================== */
 .right {
   display: flex;
   justify-content: center;
@@ -106,9 +98,7 @@
   text-decoration: none;
 }
 
-/* ==========================
-   Анимация появления
-========================== */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -120,9 +110,7 @@
   }
 }
 
-/* ==========================
-   Адаптив
-========================== */
+
 @media (max-width: 1024px) {
   .container {
     width: 90%;
@@ -182,11 +170,6 @@
 }
 
 
-
-
-
-
-/* ===== MEDIA ===== */
 @media (max-width: 1024px) {
   .container {
     gap: 30px;
@@ -219,13 +202,13 @@
     align-items: center;
     text-align: center;
     gap: 30px;
-    width: 95%;       /* почти весь экран */
-    max-width: none;  /* убираем ограничения */
+    width: 95%;       
+    max-width: none;  
     margin: 0 auto;
   }
 
   .left {
-    width: 100%;      /* левый блок занимает всю ширину */
+    width: 100%;      
     height: auto;
     padding: 15px;
     text-align: center;
@@ -233,25 +216,24 @@
   }
 
   .right form {
-    width: 100%;      /* форма занимает всю ширину */
-    max-width: none;  /* убираем ограничения */
+    width: 100%;      
+    max-width: none;  
     margin: 0 auto;
     padding: 0;
   }
 
-  /* ==== Широкие поля на мобильных ==== */
   .right form input,
   .right form textarea,
   .right form button {
-    width: 100%;      /* полностью растянуть */
+    width: 100%;      
     max-width: none;
     font-size: 15px;
     padding: 14px 12px;
-    box-sizing: border-box; /* чтобы padding учитывался */
+    box-sizing: border-box; 
   }
 
   .right form textarea {
-    height: 120px;    /* чуть выше */
+    height: 120px;    
   }
 }
 

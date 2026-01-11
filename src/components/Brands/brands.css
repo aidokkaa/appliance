@@ -1,23 +1,21 @@
-/* ===== Brands Section ===== */
+
 
 .brands-section {
   overflow: hidden;
-  min-height: 120px; /* критично для iOS */
+  min-height: 120px; 
 }
 
-/* ===== Marquee wrapper ===== */
 
 .brands-marquee {
   width: 100%;
   overflow: hidden;
   padding: 60px 0 10px;
 
-  /* iOS Safari render fix */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
-/* ===== Moving track ===== */
+
 
 .brands-track {
   display: flex;
@@ -27,13 +25,12 @@
 
   animation: scroll 40s linear infinite;
 
-  /* iOS Safari FIX */
+
   will-change: transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
-/* ===== Brand item ===== */
 
 .brand-item {
   flex: 0 0 auto;
@@ -44,7 +41,7 @@
   transition: 0.3s;
 }
 
-/* ===== Animation ===== */
+
 
 @keyframes scroll {
   from {
@@ -55,7 +52,6 @@
   }
 }
 
-/* ===== Mobile ===== */
 
 @media (max-width: 768px) {
   .brands-section {

@@ -24,7 +24,7 @@ const applianceOptions = [
 export default function RequestPage() {
   const location = useLocation();
   const formRef = useRef();
-  const statusRef = useRef(null); // <-- ref на сообщение
+  const statusRef = useRef(null); 
 
   const selectedService = location.state?.serviceTitle || "";
 
@@ -74,7 +74,7 @@ export default function RequestPage() {
 
     if (!form.firstName || !form.address || !form.zipCode || !form.phoneNumber) {
       setSubmitStatus("required");
-      setTimeout(scrollToStatus, 50); // прокрутка к сообщению
+      setTimeout(scrollToStatus, 50); 
       return;
     }
 
@@ -101,12 +101,12 @@ export default function RequestPage() {
           details: "",
         });
 
-        setTimeout(scrollToStatus, 50); // прокрутка к сообщению
+        setTimeout(scrollToStatus, 50); 
       })
       .catch(() => {
         setSubmitStatus("error");
         setIsSubmitting(false);
-        setTimeout(scrollToStatus, 50); // прокрутка к сообщению
+        setTimeout(scrollToStatus, 50);
       });
   };
 
@@ -121,8 +121,6 @@ export default function RequestPage() {
             <p className="req-sub">
               Fill out the form and our technician will contact you shortly
             </p>
-
-            {/* STATUS MESSAGES */}
             {submitStatus === "success" && (
               <div ref={statusRef} className="req-msg req-msg--success">
                 Thank you! We will contact you within 30 minutes.

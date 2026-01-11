@@ -1,6 +1,5 @@
 import '../Brands/brands.css'
 import { useState } from 'react'
-import admiral from '../../images/brands/admiral.png'
 import thor from '../../images/brands/Thor.jpg'
 import whirlpool from '../../images/brands/whirlpool.jpg'
 import amana from '../../images/brands/amana.jpg'
@@ -94,25 +93,4 @@ export default Brands
 
 
 
-// две ленты
-{/* <section className="brands-section">
-  <div className="brands-marquee marquee-left">
-    <div className="brands-track">
-      {[...brands, ...brands].map((b, i) => (
-        <div className="brand-item" key={i}>
-          <img src={b.src} alt={b.name} />
-        </div>
-      ))}
-    </div>
-  </div>
 
-  <div className="brands-marquee marquee-right">
-    <div className="brands-track">
-      {[...brands, ...brands].map((b, i) => (
-        <div className="brand-item" key={i}>
-          <img src={b.src} alt={b.name} />
-        </div>
-      ))}
-    </div>
-  </div>
-</section> */}

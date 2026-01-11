@@ -1,4 +1,4 @@
-/* ================= SERVICES SECTION ================= */
+
 
 .services-section {
   padding: 60px 0;
@@ -16,7 +16,7 @@
   margin-bottom: 40px;
 }
 
-/* ================= GRID ================= */
+
 
 .services-grid {
   display: grid;
@@ -25,7 +25,7 @@
   justify-items: center;
 }
 
-/* ================= SERVICE ITEM ================= */
+
 
 .service-wrapper {
   display: flex;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-/* ================= CARD ================= */
+
 
 .service-card {
   width: 170px;
@@ -51,13 +51,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover lift */
 .service-wrapper:hover .service-card {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(43, 125, 226, 0.18);
 }
 
-/* ================= ICON ================= */
 
 .service-icon {
   display: flex;
@@ -70,7 +68,6 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* SVG styling */
 .service-icon svg {
   width: 80px;
   height: 100px;
@@ -79,13 +76,12 @@
   transition: transform 0.3s ease;
 }
 
-/* Icon hover */
 .service-wrapper:hover .service-icon {
   color: #2B7DE2;
   transform: scale(1.1);
 }
 
-/* ================= TITLE ================= */
+
 
 .service-title {
   margin-top: 12px;
@@ -98,7 +94,7 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Title hover */
+
 .service-wrapper:hover .service-title {
   color: #1a3f8b;
   font-weight: 600;
@@ -129,7 +125,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -156,7 +152,7 @@
   }
 }
 
-/* Small mobile */
+
 @media (max-width: 480px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));

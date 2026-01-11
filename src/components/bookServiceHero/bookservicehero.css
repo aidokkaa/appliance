@@ -24,7 +24,7 @@
   display: flex;
   gap: 24px;
   justify-content: center;
-  flex-wrap: wrap; /* чтобы на мобильных строки переносились */
+  flex-wrap: wrap; 
 }
 .bookFeatures li {
   font-size: 14.5px;
@@ -109,7 +109,6 @@
   }
 }
 
-/* -------- SMALL MOBILE -------- */
 @media (max-width: 480px) {
   .h2Topic {
     font-size: 24px;

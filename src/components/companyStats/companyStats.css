@@ -1,21 +1,16 @@
-/* ==============================
-   Company Stats Section
-   ============================== */
 
 .company-stats {
   background: #f7f9fc;
 }
 
-/* grid */
+
 .stats-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
 }
 
-/* ==============================
-   Card
-   ============================== */
+
 
 .stat-card {
   background: #ffffff;
@@ -31,15 +26,12 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
 }
 
-/* ==============================
-   Icon
-   ============================== */
 
 .stat-icon {
   width: 30px;
   height: 30px;
   margin: 0 auto 8px;
-  color: #0A2540; /* secondary dark blue */
+  color: #0A2540; 
   opacity: 0.85;
 }
 
@@ -50,14 +42,12 @@
   fill: none;
 }
 
-/* ==============================
-   Value / Number
-   ============================== */
+
 
 .stat-value {
   font-size: 32px;
   font-weight: 700;
-  color: linear-gradient(90deg, #0a2540, #0d315a); /* brand blue */
+  color: linear-gradient(90deg, #0a2540, #0d315a); 
   margin-bottom: 6px;
   line-height: 1;
   position: relative;
@@ -78,9 +68,6 @@
   font-weight: 700;
 }
 
-/* ==============================
-   Label / Description
-   ============================== */
 
 .stat-label {
   font-size: 13px;
