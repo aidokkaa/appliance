@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+ICE Appliance Repair – React Web App
+Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ICE Appliance Repair is a modern SPA (Single Page Application) for a household appliance repair service in Chicago.
+The website allows users to:
 
-## Available Scripts
+Explore available repair services for different appliances
 
-In the project directory, you can run:
+Submit a service request form for a specific appliance
 
-### `npm start`
+View customer reviews and company information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Contact the service via the form or by phone
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is built with React.js, uses React Router for routing, and EmailJS for form submission without a backend. Styling is done with CSS/Tailwind for a responsive design.
 
-### `npm test`
+Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+SPA with routing via react-router-dom
 
-### `npm run build`
+Dynamic service request form with appliance-specific problems
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Form validation and real-time status notifications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Smooth scroll to status messages after form submission
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fully responsive design for mobile and desktop devices
 
-### `npm run eject`
+SEO optimization (proper H1/H2 headings, meta tags)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Favicon and manifest.json for PWA support
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+404 page for unknown routes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Technology Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React.js – Frontend framework
 
-## Learn More
+React Router DOM – SPA routing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+EmailJS – Form submission without a backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+CSS / Tailwind – Styling and responsive layout
+Installation & Setup
 
-### Code Splitting
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git clone https://github.com/aidokkaa/appliance.git
 
-### Analyzing the Bundle Size
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Run in development mode:
 
-### Advanced Configuration
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will be available at http://localhost:3000.
