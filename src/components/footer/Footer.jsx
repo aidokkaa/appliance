@@ -1,7 +1,5 @@
 import './footer.css';
 import { forwardRef } from "react";
-import { FaInstagramSquare, FaFacebook } from "react-icons/fa";
-
 const Footer = forwardRef ((props, ref) => {
   return (
     <div ref={ref} className='footer'>
@@ -22,21 +20,6 @@ const Footer = forwardRef ((props, ref) => {
           </a>
           <a href="mailto:admin@iceappus.com" className="footerLink">
            <b>Email</b>: admin@iceappus.com
-          </a>
-        </div>
-        <div className="social">
-          <a
-            href="#"
-            className='iconF'
-          >
-            <FaInstagramSquare />
-          </a>
-
-          <a
-            href="#"
-            className='iconF'
-          >
-            <FaFacebook />
           </a>
         </div>
 

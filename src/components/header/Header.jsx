@@ -4,7 +4,7 @@ import logo from '../../images/icelogo.jpg';
 import burger from '../../images/burger.svg';
 import { Link,useLocation } from 'react-router-dom';
 
-export default function Header({ aboutRef, faqRef, serviceRef, reviewRef, setOpen, contactRef }) {
+export default function Header({ aboutRef, faqRef, serviceRef, setOpen, contactRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const isRequestPage = location.pathname === "/requestPage";
@@ -23,7 +23,7 @@ export default function Header({ aboutRef, faqRef, serviceRef, reviewRef, setOpe
       <header className="header">
         <div className="headerInner">
           <Link to='/'>
-            <img src={logo} className="logoHeader" alt="Smart Appliance Repair" />
+            <img src={logo} className="logoHeader" alt="ICE Appliance Repair" />
           </Link>
      {
       !isRequestPage && (
@@ -32,7 +32,6 @@ export default function Header({ aboutRef, faqRef, serviceRef, reviewRef, setOpe
               <li onClick={() => scrollTo(aboutRef)}>About us</li>
               <li onClick={() => scrollTo(faqRef)}>FAQ</li>
               <li onClick={() => scrollTo(serviceRef)}>Services</li>
-              <li onClick={() => scrollTo(reviewRef)}>Reviews</li>
               <li onClick={() => scrollTo(contactRef)}>Contacts</li>
             </ul>
 
@@ -62,7 +61,6 @@ export default function Header({ aboutRef, faqRef, serviceRef, reviewRef, setOpe
           <span onClick={() => scrollTo(aboutRef)}>About us</span>
           <span onClick={() => scrollTo(faqRef)}>FAQ</span>
           <span onClick={() => scrollTo(serviceRef)}>Services</span>
-          <span onClick={() => scrollTo(reviewRef)}>Reviews</span>
           <span onClick={() => scrollTo(contactRef)}>Contact</span>
 
           <Link to='/requestPage'>

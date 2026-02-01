@@ -9,7 +9,6 @@ import Footer from './components/footer/Footer';
 import BookServiceHero from './components/bookServiceHero/BookServiceHero';
 import AboutUs from './components/about/Aboutus';
 import CompanyStats from './components/companyStats/CompanyStats';
-import Reviews from './components/reviews/Reviews';
 import RequestPage from './pages/RequestPage';
 import Brands from './components/Brands/Brands';
 import ContactSection from './components/contactSection/ContactSection';
@@ -60,7 +59,6 @@ function App() {
               <Services ref={serviceRef} />
               <CompanyStats />
               <AboutUs ref={aboutRef} />
-              <Reviews ref={reviewRef} />
               <Faq ref={faqRef} />
               <ContactSection></ContactSection>
               <Footer ref={contactRef} />
