@@ -18,7 +18,7 @@ const Footer = () => {
             Phone: +1 (773) 461 89 02 
           </a>
           <a href="mailto:iceappusa@gmail.com" className="footerLink">
-           info@iceappus.com
+           admin@iceappus.com
           </a>
         </div>
         <div className="social">
