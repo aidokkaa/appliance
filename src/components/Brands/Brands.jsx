@@ -1,5 +1,4 @@
 import '../Brands/brands.css'
-import { useState } from 'react'
 import thor from '../../images/brands/Thor.jpg'
 import whirlpool from '../../images/brands/whirlpool.jpg'
 import amana from '../../images/brands/amana.jpg'
@@ -55,24 +54,6 @@ const Brands = () => {
     { name: "Haier", src: haier },
     { name: "Maxx", src: maxx }
   ]
-
-  const itemsPerSlide = 6
-  const [index, setIndex] = useState(0)
-
-  const maxIndex = Math.ceil(brands.length / itemsPerSlide) - 1
-
-  const next = () => {
-    setIndex(prev => (prev < maxIndex ? prev + 1 : 0))
-  }
-
-  const prev = () => {
-    setIndex(prev => (prev > 0 ? prev - 1 : maxIndex))
-  }
-
-  const visibleBrands = brands.slice(
-    index * itemsPerSlide,
-    index * itemsPerSlide + itemsPerSlide
-  )
 
   return (
  <section className="brands-section paddingofblocks">

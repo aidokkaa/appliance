@@ -1,9 +1,10 @@
 import './footer.css';
-import { FaWhatsappSquare, FaInstagramSquare, FaFacebook } from "react-icons/fa";
+import { forwardRef } from "react";
+import { FaInstagramSquare, FaFacebook } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = forwardRef ((props, ref) => {
   return (
-    <div className='footer'>
+    <div ref={ref} className='footer'>
       <div className="footerInner">
         <div className="company">
           <h3 className='footerH'>Ice Appliance Repair</h3>
@@ -12,13 +13,15 @@ const Footer = () => {
           <p>Serving Chicago & surrounding areas</p>
         </div>
         <div className="contacts">
-          <h3 className='footerH'>Contacts</h3>
-          <p>922 Davis Street</p>
+          <h3 className='footerH'>Contact</h3>
+          <b>Our locations:</b>
+          <p>922 Davis Street Evanston, IL 60201 United States</p>
+          <p>1149 Tower Rd, Schaumburg, IL 60173 United States</p>
           <a href="tel:+17734618902" className="footerLink">
-            Phone: +1 (773) 461 89 02 
+            <b>Phone</b>: +1 (773) 461 89 02 
           </a>
-          <a href="mailto:iceappusa@gmail.com" className="footerLink">
-           admin@iceappus.com
+          <a href="mailto:admin@iceappus.com" className="footerLink">
+           <b>Email</b>: admin@iceappus.com
           </a>
         </div>
         <div className="social">
@@ -47,6 +50,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Footer;

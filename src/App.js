@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect, useRef } from 'react';
+import {Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from '../src/components/header/Header'
 import Hero from './components/hero/Hero';
@@ -23,6 +23,7 @@ function App() {
   const faqRef = useRef(null);
   const reviewRef = useRef(null);
   const serviceRef = useRef(null)
+  const contactRef = useRef(null)
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -39,6 +40,7 @@ function App() {
         faqRef={faqRef} 
         reviewRef={reviewRef} 
         serviceRef={serviceRef}
+        contactRef = {contactRef}
         open={open} 
         setOpen={setOpen} 
         close={close} 
@@ -61,7 +63,7 @@ function App() {
               <Reviews ref={reviewRef} />
               <Faq ref={faqRef} />
               <ContactSection></ContactSection>
-              <Footer />
+              <Footer ref={contactRef} />
             </>
           } />
           <Route path="/requestPage" element={<RequestPage />} />
