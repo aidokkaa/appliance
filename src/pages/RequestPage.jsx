@@ -82,7 +82,7 @@ export default function RequestPage() {
 
     emailjs
       .sendForm(
-        "service_5isfl8b",
+        "service_g4v6oza",
         "template_1eihquu",
         formRef.current,
         { publicKey: "JJsLQIXT5guokDKSf" }
